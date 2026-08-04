@@ -16,9 +16,9 @@
 
   <!-- Header Navigation -->
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-solid" id="topNav">
-    <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+    <div class="flex justify-between items-center px-4 sm:px-6 md:px-margin-desktop py-3.5 sm:py-4 max-w-container-max mx-auto">
       <a href="index.html" class="flex items-center gap-3 group">
-        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 48px; width: auto;" class="h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
+        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 44px; max-height: 48px; width: auto;" class="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
       </a>
 
       <div class="hidden md:flex gap-8 items-center font-body-md text-body-md font-semibold">
@@ -31,12 +31,12 @@
         <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
       </div>
 
-      <div class="flex items-center gap-4">
-        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-2">
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-3.5 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-base rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1.5 sm:gap-2">
           <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
-          Donate Blood
+          <span>Donate Blood</span>
         </a>
-        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn">
+        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -45,17 +45,17 @@
 
   <!-- Mobile Drawer -->
   <div id="mobileBackdrop" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"></div>
-  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[300px] z-50 bg-white shadow-2xl p-6 flex flex-col justify-between">
+  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[280px] sm:w-[320px] max-w-[85vw] z-50 bg-white shadow-2xl p-5 sm:p-6 flex flex-col justify-between">
     <div>
-      <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+      <div class="flex justify-between items-center pb-5 border-b border-gray-100">
         <div class="flex items-center gap-2">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 40px; max-height: 40px; width: auto;" class="h-10 w-auto" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 36px; max-height: 40px; width: auto;" class="h-9 w-auto" />
         </div>
         <button id="closeMobileMenuBtn" class="text-gray-500 hover:text-gray-900 p-1">
           <span class="material-symbols-outlined text-2xl">close</span>
         </button>
       </div>
-      <nav class="flex flex-col gap-4 mt-8 font-semibold text-lg">
+      <nav class="flex flex-col gap-3.5 mt-6 font-semibold text-base sm:text-lg">
         <a href="index.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Home</a>
         <a href="about.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">About Us</a>
         <a href="initiatives.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Initiatives</a>
@@ -66,18 +66,18 @@
       </nav>
     </div>
     <div class="pt-6 border-t border-gray-100 space-y-3">
-      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
       </a>
     </div>
   </div>
 
   <!-- Banner -->
-  <section class="pt-32 pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
-    <div class="max-w-container-max mx-auto px-margin-desktop text-center space-y-4">
-      <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-4 py-1.5 rounded-full">24/7 Lifesaving Blood Units</span>
-      <h1 class="font-display-lg text-4xl md:text-5xl font-extrabold text-on-background">Charitable Blood Centres</h1>
-      <p class="text-on-surface-variant max-w-2xl mx-auto text-body-lg">
+  <section class="pt-24 sm:pt-32 pb-10 sm:pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop text-center space-y-3 sm:space-y-4">
+      <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full inline-block">24/7 Lifesaving Blood Units</span>
+      <h1 class="font-display-lg text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-background">Charitable Blood Centres</h1>
+      <p class="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-body-lg">
         Equipped with state-of-the-art blood component separation units, cold storage, and qualified lab technicians available round the clock.
       </p>
     </div>
@@ -85,64 +85,64 @@
 
   <!-- Search & Directory Grid -->
   <section class="py-stack-lg bg-white">
-    <div class="max-w-container-max mx-auto px-margin-desktop space-y-12">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop space-y-8 sm:space-y-12">
 
       <!-- Blood Centre Cards Grid -->
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         
         <!-- Card 1: Hapur Charitable Blood Centre -->
         <div class="bg-surface rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
-          <div class="relative h-56">
+          <div class="relative h-48 sm:h-56">
             <img src="/images/branches/hapur_branch.jpg" alt="Hapur Charitable Blood Center" class="w-full h-full object-cover"/>
-            <div class="absolute top-4 left-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-brand-red text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
               <span class="material-symbols-outlined text-xs">schedule</span> Open 24/7
             </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow">
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-md text-green-700 text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow">
               <span class="material-symbols-outlined text-xs">verified</span> NABH Accredited
             </div>
           </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <h3 class="font-bold text-2xl text-on-background">Hapur Charitable Blood Center</h3>
+          <div class="p-4 sm:p-6 flex-1 flex flex-col justify-between space-y-5 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <h3 class="font-bold text-xl sm:text-2xl text-on-background">Hapur Charitable Blood Center</h3>
               
-              <div class="space-y-2.5 text-sm text-gray-600">
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg mt-0.5 shrink-0">location_on</span>
-                  <span>2nd Floor, W-5/921, New Alok Colony, Opp. Dewan Public School, Meerut Road, Hapur (Panchsheel Nagar), Uttar Pradesh – 245101</span>
+              <div class="space-y-2 text-xs sm:text-sm text-gray-600">
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg mt-0.5 shrink-0">location_on</span>
+                  <span>2nd Floor, W-5/921, New Alok Colony, Opp. Dewan Public School, Meerut Road, Hapur (Panchsheel Nagar), UP – 245101</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">call</span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">call</span>
                   <span>Contact: <a href="tel:+916398921025" class="font-bold hover:text-brand-red">+91 63989 21025</a></span>
                 </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0 mt-0.5">mail</span>
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0 mt-0.5">mail</span>
                   <div class="break-all">Email: <a href="mailto:hapurcharitablebloodcenter@gmail.com" class="font-semibold text-gray-800 hover:text-brand-red">hapurcharitablebloodcenter@gmail.com</a></div>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">schedule</span>
-                  <span>Working Hours: <strong>24 Hours / 7 Days</strong></span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">schedule</span>
+                  <span>Hours: <strong>24 Hours / 7 Days</strong></span>
                 </div>
               </div>
 
-              <div class="bg-white p-3 rounded-xl border border-gray-100">
-                <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Available Components:</p>
-                <div class="flex flex-wrap gap-1.5 text-xs font-semibold">
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">Whole Blood</span>
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">PRBC</span>
-                  <span class="bg-blue-50 text-brand-blue px-2.5 py-1 rounded-md">Platelets</span>
-                  <span class="bg-yellow-50 text-yellow-800 px-2.5 py-1 rounded-md">FFP Plasma</span>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border border-gray-100">
+                <p class="text-[11px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-1.5 sm:mb-2">Available Components:</p>
+                <div class="flex flex-wrap gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-semibold">
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Whole Blood</span>
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">PRBC</span>
+                  <span class="bg-blue-50 text-brand-blue px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Platelets</span>
+                  <span class="bg-yellow-50 text-yellow-800 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">FFP Plasma</span>
                 </div>
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2 pt-2">
-              <a href="https://maps.app.goo.gl/h3Gut7u9B4ci72mV9?g_st=aw" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+            <div class="grid grid-cols-3 gap-1.5 sm:gap-2 pt-1 sm:pt-2">
+              <a href="https://maps.app.goo.gl/h3Gut7u9B4ci72mV9?g_st=aw" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">map</span> Maps
               </a>
-              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">verified</span> Licence
               </a>
-              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
+              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
                 <span class="material-symbols-outlined fill-1 text-xs">favorite</span> Donate
               </a>
             </div>
@@ -151,56 +151,56 @@
 
         <!-- Card 2: Vardan Charitable Blood Centre -->
         <div class="bg-surface rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
-          <div class="relative h-56">
+          <div class="relative h-48 sm:h-56">
             <img src="/images/branches/vardan_branch.jpg" alt="VARDAN Charitable Blood Centre" class="w-full h-full object-cover"/>
-            <div class="absolute top-4 left-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-brand-red text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
               <span class="material-symbols-outlined text-xs">schedule</span> Open 24/7
             </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow">
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-md text-green-700 text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow">
               <span class="material-symbols-outlined text-xs">verified</span> NABH Accredited
             </div>
           </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <h3 class="font-bold text-2xl text-on-background">VARDAN Charitable Blood Centre</h3>
+          <div class="p-4 sm:p-6 flex-1 flex flex-col justify-between space-y-5 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <h3 class="font-bold text-xl sm:text-2xl text-on-background">VARDAN Charitable Blood Centre</h3>
               
-              <div class="space-y-2.5 text-sm text-gray-600">
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg mt-0.5 shrink-0">location_on</span>
-                  <span>HQHR+9GX, NH334, Vikas Colony, Gulaothi, District Bulandshahr, Uttar Pradesh – 203408</span>
+              <div class="space-y-2 text-xs sm:text-sm text-gray-600">
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg mt-0.5 shrink-0">location_on</span>
+                  <span>HQHR+9GX, NH334, Vikas Colony, Gulaothi, District Bulandshahr, UP – 203408</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">call</span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">call</span>
                   <span>Contact: <a href="tel:+917900745068" class="font-bold hover:text-brand-red">+91 79007 45068</a></span>
                 </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0 mt-0.5">mail</span>
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0 mt-0.5">mail</span>
                   <div class="break-all">Email: <a href="mailto:Vardancharitablebloodcentre@gmail.com" class="font-semibold text-gray-800 hover:text-brand-red">Vardancharitablebloodcentre@gmail.com</a></div>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">schedule</span>
-                  <span>Working Hours: <strong>24 Hours / 7 Days</strong></span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">schedule</span>
+                  <span>Hours: <strong>24 Hours / 7 Days</strong></span>
                 </div>
               </div>
 
-              <div class="bg-white p-3 rounded-xl border border-gray-100">
-                <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Available Components:</p>
-                <div class="flex flex-wrap gap-1.5 text-xs font-semibold">
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">Whole Blood</span>
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">PRBC</span>
-                  <span class="bg-blue-50 text-brand-blue px-2.5 py-1 rounded-md">Single Donor Platelets</span>
+              <div class="bg-white p-2.5 sm:p-3 rounded-xl border border-gray-100">
+                <p class="text-[11px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-1.5 sm:mb-2">Available Components:</p>
+                <div class="flex flex-wrap gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-semibold">
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Whole Blood</span>
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">PRBC</span>
+                  <span class="bg-blue-50 text-brand-blue px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Platelets</span>
                 </div>
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2 pt-2">
-              <a href="https://maps.google.com/?q=HQHR%2BG7X%2C+NH334%2C+Vikas+Colony%2C+Gulaothi%2C+Uttar+Pradesh+203408" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+            <div class="grid grid-cols-3 gap-1.5 sm:gap-2 pt-1 sm:pt-2">
+              <a href="https://maps.google.com/?q=HQHR%2BG7X%2C+NH334%2C+Vikas+Colony%2C+Gulaothi%2C+Uttar+Pradesh+203408" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">map</span> Maps
               </a>
-              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">verified</span> Licence
               </a>
-              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
+              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
                 <span class="material-symbols-outlined fill-1 text-xs">favorite</span> Donate
               </a>
             </div>
@@ -209,56 +209,56 @@
 
         <!-- Card 3: Indus Charitable Blood Centre -->
         <div class="bg-surface rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col">
-          <div class="relative h-56">
+          <div class="relative h-48 sm:h-56">
             <img src="/images/branches/indus_branch.jpg" alt="Indus Charitable Blood Centre" class="w-full h-full object-cover"/>
-            <div class="absolute top-4 left-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-brand-red text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow-md">
               <span class="material-symbols-outlined text-xs">schedule</span> Open 24/7
             </div>
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow">
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-md text-green-700 text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1 shadow">
               <span class="material-symbols-outlined text-xs">verified</span> NABH Accredited
             </div>
           </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <h3 class="font-bold text-2xl text-on-background">Indus Charitable Blood Centre</h3>
+          <div class="p-4 sm:p-6 flex-1 flex flex-col justify-between space-y-5 sm:space-y-6">
+            <div class="space-y-3.5 sm:space-y-4">
+              <h3 class="font-bold text-xl sm:text-2xl text-on-background">Indus Charitable Blood Centre</h3>
               
-              <div class="space-y-2.5 text-sm text-gray-600">
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg mt-0.5 shrink-0">location_on</span>
+              <div class="space-y-2 text-xs sm:text-sm text-gray-600">
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg mt-0.5 shrink-0">location_on</span>
                   <span>P7HR+G7C, Hasanpur, District Amroha, Uttar Pradesh – 244241</span>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">call</span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">call</span>
                   <span>Contact: <a href="tel:+918279910878" class="font-bold hover:text-brand-red">+91 82799 10878</a></span>
                 </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0 mt-0.5">mail</span>
+                <div class="flex items-start gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0 mt-0.5">mail</span>
                   <div class="break-all">Email: <a href="mailto:induscharitablebloodcentre@gmail.com" class="font-semibold text-gray-800 hover:text-brand-red">induscharitablebloodcentre@gmail.com</a></div>
                 </div>
-                <div class="flex items-center gap-2.5">
-                  <span class="material-symbols-outlined text-brand-red text-lg shrink-0">schedule</span>
-                  <span>Working Hours: <strong>24 Hours / 7 Days</strong></span>
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                  <span class="material-symbols-outlined text-brand-red text-base sm:text-lg shrink-0">schedule</span>
+                  <span>Hours: <strong>24 Hours / 7 Days</strong></span>
                 </div>
               </div>
 
               <div class="bg-white p-3 rounded-xl border border-gray-100">
-                <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Available Components:</p>
-                <div class="flex flex-wrap gap-1.5 text-xs font-semibold">
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">Whole Blood</span>
-                  <span class="bg-red-50 text-brand-red px-2.5 py-1 rounded-md">PRBC</span>
-                  <span class="bg-blue-50 text-brand-blue px-2.5 py-1 rounded-md">Platelet Concentrates</span>
+                <p class="text-[11px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-1.5 sm:mb-2">Available Components:</p>
+                <div class="flex flex-wrap gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-semibold">
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Whole Blood</span>
+                  <span class="bg-red-50 text-brand-red px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">PRBC</span>
+                  <span class="bg-blue-50 text-brand-blue px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">Platelet Concentrates</span>
                 </div>
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2 pt-2">
-              <a href="https://www.google.com/maps/dir//INDUS+BLOOD+CENTRE+Hasanpur,+P7HR%2BG7C,+Hasanpur,+Uttar+Pradesh+244241/@28.7303745,78.2819308,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390b73005f062751:0x65cbb4acf6980538!2m2!1d78.2906406!2d28.7288125" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+            <div class="grid grid-cols-3 gap-1.5 sm:gap-2 pt-1 sm:pt-2">
+              <a href="https://www.google.com/maps/dir//INDUS+BLOOD+CENTRE+Hasanpur,+P7HR%2BG7C,+Hasanpur,+Uttar+Pradesh+244241/@28.7303745,78.2819308,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390b73005f062751:0x65cbb4acf6980538!2m2!1d78.2906406!2d28.7288125" target="_blank" rel="noopener noreferrer" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">map</span> Maps
               </a>
-              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors">
+              <a href="licences.html" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 transition-colors">
                 <span class="material-symbols-outlined text-xs text-brand-red">verified</span> Licence
               </a>
-              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2.5 px-2 rounded-xl text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
+              <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs flex items-center justify-center gap-1 shadow-sm transition-all">
                 <span class="material-symbols-outlined fill-1 text-xs">favorite</span> Donate
               </a>
             </div>
@@ -271,38 +271,38 @@
   </section>
 
   <!-- Emergency Blood Request Banner -->
-  <section class="py-12 bg-red-50 border-y border-red-100">
-    <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-      <div class="flex items-center gap-4">
-        <div class="w-14 h-14 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-md">
-          <span class="material-symbols-outlined text-3xl">e911_emergency</span>
+  <section class="py-8 sm:py-12 bg-red-50 border-y border-red-100">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6 text-center md:text-left">
+      <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+        <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-brand-red text-white flex items-center justify-center shrink-0 shadow-md">
+          <span class="material-symbols-outlined text-2xl sm:text-3xl">e911_emergency</span>
         </div>
         <div>
-          <h3 class="font-bold text-2xl text-on-background">Need Blood Urgently for a Patient?</h3>
-          <p class="text-gray-600 text-sm">Our 24/7 hotline provides instant cross-matching and dispatch guidance.</p>
+          <h3 class="font-bold text-xl sm:text-2xl text-on-background">Need Blood Urgently for a Patient?</h3>
+          <p class="text-gray-600 text-xs sm:text-sm mt-1">Our 24/7 hotline provides instant cross-matching and dispatch guidance.</p>
         </div>
       </div>
-      <a href="tel:+9118001234567" class="bg-brand-red text-white px-8 py-3.5 rounded-xl font-bold hover:bg-brand-red-hover transition-all shadow-lg flex items-center gap-2">
-        <span class="material-symbols-outlined">call</span> Call Emergency Helpline: 1800-123-4567
+      <a href="tel:+9118001234567" class="w-full sm:w-auto bg-brand-red text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl font-bold hover:bg-brand-red-hover transition-all shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base">
+        <span class="material-symbols-outlined">call</span> Call Emergency Helpline
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-on-background text-gray-300 pt-16 pb-12 border-t border-gray-800 mt-auto">
-    <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
-      <div class="space-y-6">
+  <footer class="bg-on-background text-gray-300 pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-gray-800 mt-auto">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-gutter">
+      <div class="space-y-4 sm:space-y-6">
         <div class="flex items-center gap-3">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 56px; max-height: 56px; width: auto;" class="h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 56px; width: auto;" class="h-12 sm:h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
         </div>
-        <p class="text-gray-400 text-body-sm leading-relaxed">
+        <p class="text-gray-400 text-xs sm:text-body-sm leading-relaxed">
           Dedicated to providing healthcare support and bridging the medical resource gap for India's underserved populations since 2020.
         </p>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Quick Links</h4>
-        <ul class="space-y-3 font-body-sm text-gray-400">
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-base sm:text-lg">Quick Links</h4>
+        <ul class="space-y-2.5 sm:space-y-3 text-xs sm:text-body-sm text-gray-400">
           <li><a href="index.html" class="hover:text-white transition-all">Home</a></li>
           <li><a href="about.html" class="hover:text-white transition-all">About Us</a></li>
           <li><a href="initiatives.html" class="hover:text-white transition-all">Our Initiatives</a></li>
@@ -313,48 +313,48 @@
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Contact Info</h4>
-        <ul class="space-y-4 font-body-sm text-gray-400">
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-brand-red mt-0.5">location_on</span>
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-base sm:text-lg">Contact Info</h4>
+        <ul class="space-y-3 sm:space-y-4 text-xs sm:text-body-sm text-gray-400">
+          <li class="flex items-start gap-2.5 sm:gap-3">
+            <span class="material-symbols-outlined text-brand-red mt-0.5 text-base sm:text-lg">location_on</span>
             <span>Branches in Hapur, Gulaothi (Bulandshahr) & Hasanpur (Amroha), UP</span>
           </li>
-          <li class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-brand-red">call</span>
+          <li class="flex items-center gap-2.5 sm:gap-3">
+            <span class="material-symbols-outlined text-brand-red text-base sm:text-lg">call</span>
             <span>+91 63989 21025 / +91 79007 45068</span>
           </li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Support Our Work</h4>
-        <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors block text-center">
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-lg">Support Our Work</h4>
+        <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors block text-center text-sm sm:text-base">
           Donate Blood Today
         </a>
       </div>
     </div>
 
-    <div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-gray-800 flex justify-between items-center text-body-sm text-gray-400">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-body-sm text-gray-400">
       <p>© 2024 Indus Care Foundation. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Modals -->
   <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
+    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-5 sm:p-8 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-4 right-4 sm:top-6 sm:right-6 text-gray-400 hover:text-gray-700">
         <span class="material-symbols-outlined text-2xl">close</span>
       </button>
-      <h3 class="font-bold text-2xl text-on-background mb-4">Blood Donor Registration</h3>
-      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-4">
+      <h3 class="font-bold text-xl sm:text-2xl text-on-background mb-4">Blood Donor Registration</h3>
+      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-3.5 sm:space-y-4">
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-          <input required type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <input required type="text" placeholder="Name" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
-            <select required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none bg-white">
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
+            <select required class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none bg-white">
               <option value="O+">O+</option>
               <option value="A+">A+</option>
               <option value="B+">B+</option>
@@ -362,24 +362,24 @@
             </select>
           </div>
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone *</label>
-            <input required type="tel" placeholder="Phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Phone *</label>
+            <input required type="tel" placeholder="Phone" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
           </div>
         </div>
-        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3.5 rounded-xl transition-all shadow-md">
+        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base">
           Complete Registration
         </button>
       </form>
     </div>
   </div>
 
-  <div id="mapModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-3xl w-full p-6 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 bg-gray-100 p-2 rounded-full z-10">
-        <span class="material-symbols-outlined text-2xl">close</span>
+  <div id="mapModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-content bg-white rounded-2xl max-w-3xl w-full p-4 sm:p-6 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-700 bg-gray-100 p-1.5 sm:p-2 rounded-full z-10">
+        <span class="material-symbols-outlined text-xl sm:text-2xl">close</span>
       </button>
-      <h3 id="mapModalTitle" class="font-bold text-xl text-on-background mb-4">Blood Centre Location</h3>
-      <div class="w-full h-[400px] rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+      <h3 id="mapModalTitle" class="font-bold text-lg sm:text-xl text-on-background mb-3 sm:mb-4">Blood Centre Location</h3>
+      <div class="w-full h-[280px] sm:h-[400px] rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
         <iframe id="mapModalIframe" class="w-full h-full border-0" src="https://maps.google.com/maps?q=Hapur+Blood+Bank&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>

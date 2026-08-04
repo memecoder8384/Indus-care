@@ -22,9 +22,9 @@
 
   <!-- Top Navigation Header -->
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-glass" id="topNav">
-    <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+    <div class="flex justify-between items-center px-4 sm:px-6 md:px-margin-desktop py-3.5 sm:py-4 max-w-container-max mx-auto">
       <a href="index.html" class="flex items-center gap-3 group">
-        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 48px; width: auto;" class="h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
+        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 44px; max-height: 48px; width: auto;" class="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
       </a>
 
       <div class="hidden md:flex gap-8 items-center font-body-md text-body-md font-semibold">
@@ -37,10 +37,10 @@
         <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
       </div>
 
-      <div class="flex items-center gap-4">
-        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-2">
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-3.5 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-base rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1.5 sm:gap-2">
           <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
-          Donate Blood
+          <span>Donate Blood</span>
         </a>
         <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
@@ -51,17 +51,17 @@
 
   <!-- Mobile Drawer Menu Overlay -->
   <div id="mobileBackdrop" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"></div>
-  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[300px] z-50 bg-white shadow-2xl p-6 flex flex-col justify-between">
+  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[280px] sm:w-[320px] max-w-[85vw] z-50 bg-white shadow-2xl p-5 sm:p-6 flex flex-col justify-between">
     <div>
-      <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+      <div class="flex justify-between items-center pb-5 border-b border-gray-100">
         <div class="flex items-center gap-2">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 40px; max-height: 40px; width: auto;" class="h-10 w-auto" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 36px; max-height: 40px; width: auto;" class="h-9 w-auto" />
         </div>
         <button id="closeMobileMenuBtn" class="text-gray-500 hover:text-gray-900 p-1">
           <span class="material-symbols-outlined text-2xl">close</span>
         </button>
       </div>
-      <nav class="flex flex-col gap-4 mt-8 font-semibold text-lg">
+      <nav class="flex flex-col gap-3.5 mt-6 font-semibold text-base sm:text-lg">
         <a href="index.html" class="text-brand-red bg-red-50 px-4 py-2.5 rounded-lg">Home</a>
         <a href="about.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">About Us</a>
         <a href="initiatives.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Initiatives</a>
@@ -72,39 +72,39 @@
       </nav>
     </div>
     <div class="pt-6 border-t border-gray-100 space-y-3">
-      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
       </a>
-      <button data-open-modal="volunteer" class="w-full bg-surface-container text-on-surface py-3 rounded-lg font-semibold hover:bg-surface-container-highest transition-colors">
+      <button data-open-modal="volunteer" class="w-full bg-surface-container text-on-surface py-3 rounded-lg font-semibold hover:bg-surface-container-highest transition-colors text-sm sm:text-base">
         Volunteer With Us
       </button>
     </div>
   </div>
 
   <!-- Hero Section -->
-  <header class="relative h-screen min-h-[750px] max-h-[950px] flex flex-col justify-center overflow-hidden">
+  <header class="relative min-h-[600px] md:h-screen md:min-h-[750px] md:max-h-[950px] flex flex-col justify-center overflow-hidden py-16 md:py-0">
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-gradient-to-r from-on-background/90 via-on-background/70 to-transparent z-10"></div>
       <img alt="Indus Care Healthcare Workers" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000" src="/images/hero.jpg"/>
     </div>
     
-    <div class="relative z-20 px-margin-desktop max-w-container-max mx-auto w-full pt-16">
-      <div class="max-w-2xl text-on-primary space-y-6">
-        <div class="inline-flex items-center gap-2 bg-brand-red/90 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+    <div class="relative z-20 px-4 sm:px-6 md:px-margin-desktop max-w-container-max mx-auto w-full pt-12 md:pt-16 pb-28 md:pb-0">
+      <div class="max-w-2xl text-on-primary space-y-4 sm:space-y-6">
+        <div class="inline-flex items-center gap-2 bg-brand-red/90 text-white px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
           <span class="material-symbols-outlined text-sm">health_and_safety</span> Saving Lives Across India
         </div>
-        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg font-extrabold leading-tight text-white">
+        <h1 class="font-display-lg text-3xl sm:text-4xl md:text-display-lg font-extrabold leading-tight text-white">
           Working Towards a <span class="text-red-400">Healthier Tomorrow</span>
         </h1>
-        <p class="font-body-lg text-body-lg text-gray-200 leading-relaxed">
+        <p class="font-body-lg text-sm sm:text-body-lg text-gray-200 leading-relaxed">
           Providing affordable healthcare, 24/7 lifesaving blood support, medical check-up camps, and community outreach programs to underserved communities across India.
         </p>
-        <div class="flex flex-wrap gap-4 pt-2">
-          <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all shadow-xl text-lg hover:-translate-y-0.5">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+          <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-xl text-base sm:text-lg hover:-translate-y-0.5">
             <span class="material-symbols-outlined fill-1">favorite</span>
             Donate Blood
           </a>
-          <a href="about.html" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 transition-all text-lg hover:-translate-y-0.5">
+          <a href="about.html" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-base sm:text-lg hover:-translate-y-0.5">
             <span class="material-symbols-outlined">info</span>
             Learn More
           </a>
@@ -113,23 +113,23 @@
     </div>
 
     <!-- Hero Stats Overlay -->
-    <div class="absolute bottom-0 left-0 w-full z-20 bg-gradient-to-t from-on-background via-on-background/80 to-transparent pt-12">
-      <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter mb-10">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-6 rounded-xl stats-card-glow transition-all">
-          <div class="text-white font-bold text-headline-md mb-1">Since 2020</div>
-          <div class="text-gray-300 text-body-sm">Commencing our journey of care</div>
+    <div class="relative md:absolute bottom-0 left-0 w-full z-20 bg-gradient-to-t from-on-background via-on-background/90 md:via-on-background/80 to-transparent pt-6 md:pt-12">
+      <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-gutter mb-6 md:mb-10">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+          <div class="text-white font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">Since 2020</div>
+          <div class="text-gray-300 text-xs sm:text-body-sm">Commencing our journey of care</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-6 rounded-xl stats-card-glow transition-all">
-          <div class="text-red-400 font-bold text-headline-md mb-1">3 Centres</div>
-          <div class="text-gray-300 text-body-sm">Charitable Blood Centres active</div>
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+          <div class="text-red-400 font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">3 Centres</div>
+          <div class="text-gray-300 text-xs sm:text-body-sm">Charitable Blood Centres active</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-6 rounded-xl stats-card-glow transition-all">
-          <div class="text-white font-bold text-headline-md mb-1">100+ Partners</div>
-          <div class="text-gray-300 text-body-sm">CSR collaborators nationwide</div>
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+          <div class="text-white font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">100+ Partners</div>
+          <div class="text-gray-300 text-xs sm:text-body-sm">CSR collaborators nationwide</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-6 rounded-xl stats-card-glow transition-all">
-          <div class="text-red-400 font-bold text-headline-md mb-1">Thousands</div>
-          <div class="text-gray-300 text-body-sm">Of lives supported & saved</div>
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+          <div class="text-red-400 font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">Thousands</div>
+          <div class="text-gray-300 text-xs sm:text-body-sm">Of lives supported & saved</div>
         </div>
       </div>
     </div>
@@ -137,48 +137,48 @@
 
   <!-- About Preview Section -->
   <section class="py-stack-lg bg-white reveal-on-scroll">
-    <div class="max-w-container-max mx-auto px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid md:grid-cols-2 gap-8 md:gap-16 items-center">
       <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-        <img class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" alt="Indus Care Free Medicine Distribution Camp" src="/images/nisulk_dawa_camp.jpg"/>
+        <img class="w-full h-[280px] sm:h-[380px] md:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" alt="Indus Care Free Medicine Distribution Camp" src="/images/nisulk_dawa_camp.jpg"/>
         <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl"></div>
-        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/50 flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-brand-red text-3xl">verified</span>
+        <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/90 backdrop-blur-md p-3 sm:p-4 rounded-xl shadow-lg border border-white/50 flex items-center justify-between">
+          <div class="flex items-center gap-2.5 sm:gap-3">
+            <span class="material-symbols-outlined text-brand-red text-2xl sm:text-3xl">verified</span>
             <div>
-              <p class="font-bold text-sm text-on-background">Registered Healthcare NGO</p>
-              <p class="text-xs text-gray-600">80G & 12A Certified non-profit</p>
+              <p class="font-bold text-xs sm:text-sm text-on-background">Registered Healthcare NGO</p>
+              <p class="text-[11px] sm:text-xs text-gray-600">80G & 12A Certified non-profit</p>
             </div>
           </div>
-          <span class="text-xs bg-red-100 text-brand-red px-3 py-1 rounded-full font-semibold">100% Transparent</span>
+          <span class="text-[10px] sm:text-xs bg-red-100 text-brand-red px-2.5 sm:px-3 py-1 rounded-full font-semibold">100% Transparent</span>
         </div>
       </div>
-      <div class="space-y-6">
-        <div class="inline-flex items-center gap-2 text-brand-red font-bold text-label-caps tracking-widest bg-red-50 px-3 py-1.5 rounded-full">
+      <div class="space-y-4 sm:space-y-6">
+        <div class="inline-flex items-center gap-2 text-brand-red font-bold text-label-caps tracking-widest bg-red-50 px-3 py-1.5 rounded-full text-xs">
           OUR MISSION
         </div>
-        <h2 class="font-headline-md text-headline-md text-on-background md:text-4xl font-bold leading-tight">
+        <h2 class="font-headline-md text-headline-md text-on-background text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
           Bridging the Gap in Healthcare Accessibility
         </h2>
-        <p class="text-on-surface-variant font-body-lg leading-relaxed">
+        <p class="text-on-surface-variant font-body-lg text-sm sm:text-body-lg leading-relaxed">
           Indus Care Foundation is dedicated to transforming India's healthcare landscape. We specialize in blood donation logistics, comprehensive medical check-up camps, and providing critical diagnostic investigations to those who need them most.
         </p>
-        <div class="grid grid-cols-2 gap-4 py-2">
-          <div class="flex items-start gap-3 bg-surface p-4 rounded-xl border border-blue-50">
-            <span class="material-symbols-outlined text-brand-red text-3xl mt-0.5">bloodtype</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 py-2">
+          <div class="flex items-start gap-3 bg-surface p-3.5 sm:p-4 rounded-xl border border-blue-50">
+            <span class="material-symbols-outlined text-brand-red text-2xl sm:text-3xl mt-0.5">bloodtype</span>
             <div>
-              <h4 class="font-bold text-on-surface">Safe Blood</h4>
-              <p class="text-body-sm text-on-surface-variant">Ensuring 24/7 availability</p>
+              <h4 class="font-bold text-on-surface text-sm sm:text-base">Safe Blood</h4>
+              <p class="text-xs sm:text-body-sm text-on-surface-variant">Ensuring 24/7 availability</p>
             </div>
           </div>
-          <div class="flex items-start gap-3 bg-surface p-4 rounded-xl border border-blue-50">
-            <span class="material-symbols-outlined text-brand-blue text-3xl mt-0.5">medical_services</span>
+          <div class="flex items-start gap-3 bg-surface p-3.5 sm:p-4 rounded-xl border border-blue-50">
+            <span class="material-symbols-outlined text-brand-blue text-2xl sm:text-3xl mt-0.5">medical_services</span>
             <div>
-              <h4 class="font-bold text-on-surface">Free Camps</h4>
-              <p class="text-body-sm text-on-surface-variant">Doorstep medical aid</p>
+              <h4 class="font-bold text-on-surface text-sm sm:text-base">Free Camps</h4>
+              <p class="text-xs sm:text-body-sm text-on-surface-variant">Doorstep medical aid</p>
             </div>
           </div>
         </div>
-        <a href="about.html" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-blue-800 text-white px-8 py-3.5 rounded-xl font-bold hover:shadow-lg transition-all">
+        <a href="about.html" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-blue-800 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl font-bold hover:shadow-lg transition-all text-sm sm:text-base">
           Read More About Our Story
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </a>
@@ -188,85 +188,87 @@
 
   <!-- Key Initiatives Grid -->
   <section class="py-stack-lg bg-surface-container-low reveal-on-scroll">
-    <div class="max-w-container-max mx-auto px-margin-desktop">
-      <div class="text-center mb-16 space-y-3">
-        <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-3 py-1 rounded-full">Impact In Action</span>
-        <h2 class="font-headline-md text-on-background text-3xl md:text-4xl font-extrabold">Our Key Initiatives</h2>
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop">
+      <div class="text-center mb-10 sm:mb-16 space-y-3">
+        <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3 py-1 rounded-full">Impact In Action</span>
+        <h2 class="font-headline-md text-on-background text-2xl sm:text-3xl md:text-4xl font-extrabold">Our Key Initiatives</h2>
         <div class="h-1.5 w-24 bg-brand-red mx-auto rounded-full"></div>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         <!-- Card 1 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl">stethoscope</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">stethoscope</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">Health Check-up Camps</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Comprehensive diagnostic screenings and consultations conducted by specialist doctors in rural hubs.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">Health Check-up Camps</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Comprehensive diagnostic screenings and consultations conducted by specialist doctors in rural hubs.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
         <!-- Card 2 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl fill-1">water_drop</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl fill-1">water_drop</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">Blood Donation Drives</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Mobilizing corporate and community volunteers to maintain a steady, life-saving blood supply.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">Blood Donation Drives</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Mobilizing corporate and community volunteers to maintain a steady, life-saving blood supply.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
         <!-- Card 3 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl">biotech</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">biotech</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">Free Blood Investigations</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Providing advanced pathology and hematology tests at no cost to the underprivileged.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">Free Blood Investigations</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Providing advanced pathology and hematology tests at no cost to the underprivileged.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
         <!-- Card 4 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl">pill</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">pill</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">Medicine Distribution</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Direct supply of essential life-saving medications and vitamins to community health outposts.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">Medicine Distribution</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Direct supply of essential life-saving medications and vitamins to community health outposts.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
         <!-- Card 5 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl">coronavirus</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">coronavirus</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">COVID Relief Programs</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Sustained support through vaccination awareness, oxygen supply, and long-COVID rehabilitation.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">COVID Relief Programs</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Sustained support through vaccination awareness, oxygen supply, and long-COVID rehabilitation.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
         <!-- Card 6 -->
-        <div class="initiative-card bg-white p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
-          <div class="icon-bg w-14 h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-6 transition-all duration-300">
-            <span class="material-symbols-outlined text-3xl">medical_information</span>
+        <div class="initiative-card bg-white p-6 sm:p-8 rounded-xl border border-outline-variant/10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl group">
+          <div class="icon-bg w-12 sm:w-14 h-12 sm:h-14 bg-surface-container-highest rounded-lg flex items-center justify-center text-brand-red mb-5 sm:mb-6 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">medical_information</span>
           </div>
-          <h3 class="font-headline-sm text-on-background mb-3 font-bold">First Aid Camps</h3>
-          <p class="text-on-surface-variant mb-6 text-body-md leading-relaxed">Training community leaders in emergency response and providing essential first aid kits.</p>
-          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" href="initiatives.html">
+          <h3 class="font-headline-sm text-on-background mb-2.5 sm:mb-3 font-bold text-lg sm:text-xl">First Aid Camps</h3>
+          <p class="text-on-surface-variant mb-5 sm:mb-6 text-sm sm:text-body-md leading-relaxed">Training community leaders in emergency response and providing essential first aid kits.</p>
+          <a class="text-brand-red font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all text-sm" href="initiatives.html">
             View Details <span class="material-symbols-outlined text-body-md">arrow_forward</span>
           </a>
         </div>
       </div>
     </div>
+  </section>
+
   <!-- Specialized Blood Facilities Section -->
   <section class="py-stack-lg bg-surface-container relative overflow-hidden reveal-on-scroll border-y border-outline-variant/10">
-    <div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop">
       <div class="text-center mb-16 space-y-3">
         <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-4 py-1.5 rounded-full inline-block">24/7 Clinical Services</span>
         <h2 class="font-headline-md text-on-background text-3xl md:text-4xl font-extrabold">Specialized Blood Facilities & Components</h2>
@@ -370,74 +372,76 @@
 
   <!-- Blood Donation Awareness Section -->
   <section class="py-stack-lg bg-white relative overflow-hidden reveal-on-scroll">
-    <div class="max-w-container-max mx-auto px-margin-desktop">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div class="space-y-8">
-          <div class="space-y-3">
-            <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-3 py-1 rounded-full">The Urgency</span>
-            <h2 class="font-headline-md text-on-background text-4xl font-extrabold leading-tight">The Critical Shortage</h2>
+  <!-- Urgency & Who Benefits Section -->
+  <section class="py-stack-lg bg-surface reveal-on-scroll">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop">
+      <div class="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="space-y-6 sm:space-y-8">
+          <div class="space-y-2 sm:space-y-3">
+            <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3 py-1 rounded-full">The Urgency</span>
+            <h2 class="font-headline-md text-on-background text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">The Critical Shortage</h2>
           </div>
-          <p class="text-on-surface-variant text-body-lg leading-relaxed">
+          <p class="text-on-surface-variant text-sm sm:text-body-lg leading-relaxed">
             Every day, thousands of patients wait for a blood transfusion. The gap between demand and supply costs lives. Your contribution can change this narrative immediately.
           </p>
           <!-- Visual Infographic -->
-          <div class="space-y-6">
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20 shadow-sm">
-              <div class="flex justify-between items-end mb-2">
+          <div class="space-y-4 sm:space-y-6">
+            <div class="bg-surface-container p-4 sm:p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+              <div class="flex justify-between items-end mb-2 text-xs sm:text-base">
                 <span class="font-bold text-on-surface">Annual Requirement: 12M Units</span>
-                <span class="text-brand-red font-extrabold text-2xl">100%</span>
+                <span class="text-brand-red font-extrabold text-xl sm:text-2xl">100%</span>
               </div>
-              <div class="w-full bg-outline-variant/30 h-4 rounded-full overflow-hidden">
+              <div class="w-full bg-outline-variant/30 h-3.5 sm:h-4 rounded-full overflow-hidden">
                 <div class="bg-brand-red h-full w-full"></div>
               </div>
             </div>
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20 shadow-sm">
-              <div class="flex justify-between items-end mb-2">
+            <div class="bg-surface-container p-4 sm:p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+              <div class="flex justify-between items-end mb-2 text-xs sm:text-base">
                 <span class="font-bold text-on-surface">Current Collection: 10M Units</span>
-                <span class="text-brand-blue font-extrabold text-2xl">83%</span>
+                <span class="text-brand-blue font-extrabold text-xl sm:text-2xl">83%</span>
               </div>
-              <div class="w-full bg-outline-variant/30 h-4 rounded-full overflow-hidden">
+              <div class="w-full bg-outline-variant/30 h-3.5 sm:h-4 rounded-full overflow-hidden">
                 <div class="bg-brand-blue h-full w-[83%]"></div>
               </div>
             </div>
-            <div class="text-center py-4 bg-red-50 rounded-xl border-2 border-dashed border-brand-red/30">
-              <span class="text-brand-red font-bold text-xl">2 Million Units Shortage Every Year</span>
+            <div class="text-center py-3 sm:py-4 bg-red-50 rounded-xl border-2 border-dashed border-brand-red/30 px-2">
+              <span class="text-brand-red font-bold text-base sm:text-xl">2 Million Units Shortage Every Year</span>
             </div>
           </div>
         </div>
 
-        <div class="bg-surface rounded-3xl p-10 md:p-12 relative border border-blue-100 shadow-xl">
-          <h3 class="font-headline-sm text-on-background mb-8 text-center font-bold text-2xl">Who Benefits From Your Donation?</h3>
-          <div class="grid grid-cols-2 gap-8">
-            <div class="text-center group p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <div class="w-20 h-20 mx-auto bg-red-50 rounded-full flex items-center justify-center shadow-inner mb-4 group-hover:scale-110 transition-all text-brand-red">
-                <span class="material-symbols-outlined text-4xl">child_care</span>
+        <div class="bg-surface rounded-3xl p-6 sm:p-10 md:p-12 relative border border-blue-100 shadow-xl">
+          <h3 class="font-headline-sm text-on-background mb-6 sm:mb-8 text-center font-bold text-xl sm:text-2xl">Who Benefits From Your Donation?</h3>
+          <div class="grid grid-cols-2 gap-3 sm:gap-8">
+            <div class="text-center group p-3 sm:p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div class="w-14 sm:w-20 h-14 sm:h-20 mx-auto bg-red-50 rounded-full flex items-center justify-center shadow-inner mb-2.5 sm:mb-4 group-hover:scale-110 transition-all text-brand-red">
+                <span class="material-symbols-outlined text-2xl sm:text-4xl">child_care</span>
               </div>
-              <p class="font-bold text-on-surface text-base">Thalassemia Patients</p>
+              <p class="font-bold text-on-surface text-xs sm:text-base">Thalassemia Patients</p>
             </div>
-            <div class="text-center group p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <div class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center shadow-inner mb-4 group-hover:scale-110 transition-all text-brand-blue">
-                <span class="material-symbols-outlined text-4xl">medical_services</span>
+            <div class="text-center group p-3 sm:p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div class="w-14 sm:w-20 h-14 sm:h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center shadow-inner mb-2.5 sm:mb-4 group-hover:scale-110 transition-all text-brand-blue">
+                <span class="material-symbols-outlined text-2xl sm:text-4xl">medical_services</span>
               </div>
-              <p class="font-bold text-on-surface text-base">Cancer Patients</p>
+              <p class="font-bold text-on-surface text-xs sm:text-base">Cancer Patients</p>
             </div>
-            <div class="text-center group p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <div class="w-20 h-20 mx-auto bg-pink-50 rounded-full flex items-center justify-center shadow-inner mb-4 group-hover:scale-110 transition-all text-pink-600">
-                <span class="material-symbols-outlined text-4xl">pregnant_woman</span>
+            <div class="text-center group p-3 sm:p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div class="w-14 sm:w-20 h-14 sm:h-20 mx-auto bg-pink-50 rounded-full flex items-center justify-center shadow-inner mb-2.5 sm:mb-4 group-hover:scale-110 transition-all text-pink-600">
+                <span class="material-symbols-outlined text-2xl sm:text-4xl">pregnant_woman</span>
               </div>
-              <p class="font-bold text-on-surface text-base">Pregnant Women</p>
+              <p class="font-bold text-on-surface text-xs sm:text-base">Pregnant Women</p>
             </div>
-            <div class="text-center group p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <div class="w-20 h-20 mx-auto bg-orange-50 rounded-full flex items-center justify-center shadow-inner mb-4 group-hover:scale-110 transition-all text-orange-600">
-                <span class="material-symbols-outlined text-4xl">minor_crash</span>
+            <div class="text-center group p-3 sm:p-4 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all">
+              <div class="w-14 sm:w-20 h-14 sm:h-20 mx-auto bg-orange-50 rounded-full flex items-center justify-center shadow-inner mb-2.5 sm:mb-4 group-hover:scale-110 transition-all text-orange-600">
+                <span class="material-symbols-outlined text-2xl sm:text-4xl">minor_crash</span>
               </div>
-              <p class="font-bold text-on-surface text-base">Accident Victims</p>
+              <p class="font-bold text-on-surface text-xs sm:text-base">Accident Victims</p>
             </div>
           </div>
-          <div class="mt-10 text-center">
-            <button data-open-modal="donate" class="bg-brand-red text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-brand-red-hover transition-all shadow-xl pulse-red-glow">
+          <div class="mt-6 sm:mt-10 text-center">
+            <a href="contact.html" class="inline-block bg-brand-red text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:bg-brand-red-hover transition-all shadow-xl pulse-red-glow">
               Become a Blood Donor
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -41,6 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
   if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
+  // Close mobile drawer when clicking links or modal triggers inside drawer
+  if (mobileDrawer) {
+    mobileDrawer.querySelectorAll('a, button[data-open-modal]').forEach(item => {
+      item.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+
+  // Close mobile menu on window resize if expanded to desktop view
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      closeMobileMenu();
+    }
+  });
+
   // Scroll reveal observer
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
   const revealObserver = new IntersectionObserver((entries) => {

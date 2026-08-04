@@ -16,9 +16,9 @@
 
   <!-- Navigation -->
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-solid" id="topNav">
-    <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+    <div class="flex justify-between items-center px-4 sm:px-6 md:px-margin-desktop py-3.5 sm:py-4 max-w-container-max mx-auto">
       <a href="index.html" class="flex items-center gap-3 group">
-        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 48px; width: auto;" class="h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
+        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 44px; max-height: 48px; width: auto;" class="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
       </a>
 
       <div class="hidden md:flex gap-8 items-center font-body-md text-body-md font-semibold">
@@ -31,12 +31,12 @@
         <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
       </div>
 
-      <div class="flex items-center gap-4">
-        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-2">
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-3.5 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-base rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1.5 sm:gap-2">
           <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
-          Donate Blood
+          <span>Donate Blood</span>
         </a>
-        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn">
+        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -45,17 +45,17 @@
 
   <!-- Mobile Drawer -->
   <div id="mobileBackdrop" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"></div>
-  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[300px] z-50 bg-white shadow-2xl p-6 flex flex-col justify-between">
+  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[280px] sm:w-[320px] max-w-[85vw] z-50 bg-white shadow-2xl p-5 sm:p-6 flex flex-col justify-between">
     <div>
-      <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+      <div class="flex justify-between items-center pb-5 border-b border-gray-100">
         <div class="flex items-center gap-2">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 40px; max-height: 40px; width: auto;" class="h-10 w-auto" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 36px; max-height: 40px; width: auto;" class="h-9 w-auto" />
         </div>
         <button id="closeMobileMenuBtn" class="text-gray-500 hover:text-gray-900 p-1">
           <span class="material-symbols-outlined text-2xl">close</span>
         </button>
       </div>
-      <nav class="flex flex-col gap-4 mt-8 font-semibold text-lg">
+      <nav class="flex flex-col gap-3.5 mt-6 font-semibold text-base sm:text-lg">
         <a href="index.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Home</a>
         <a href="about.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">About Us</a>
         <a href="initiatives.html" class="text-brand-red bg-red-50 px-4 py-2.5 rounded-lg">Initiatives</a>
@@ -66,18 +66,18 @@
       </nav>
     </div>
     <div class="pt-6 border-t border-gray-100 space-y-3">
-      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
       </a>
     </div>
   </div>
 
   <!-- Banner -->
-  <section class="pt-32 pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
-    <div class="max-w-container-max mx-auto px-margin-desktop text-center space-y-4">
-      <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-4 py-1.5 rounded-full">Community Health Programs</span>
-      <h1 class="font-display-lg text-4xl md:text-5xl font-extrabold text-on-background">Our Key Initiatives</h1>
-      <p class="text-on-surface-variant max-w-2xl mx-auto text-body-lg">
+  <section class="pt-24 sm:pt-32 pb-10 sm:pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop text-center space-y-3 sm:space-y-4">
+      <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full inline-block">Community Health Programs</span>
+      <h1 class="font-display-lg text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-background">Our Key Initiatives</h1>
+      <p class="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-body-lg">
         Explore how Indus Care Foundation delivers preventive diagnostic care, voluntary donor networks, and emergency relief programs nationwide.
       </p>
     </div>
@@ -85,118 +85,118 @@
 
   <!-- Detailed Initiatives Section -->
   <section class="py-stack-lg bg-white">
-    <div class="max-w-container-max mx-auto px-margin-desktop space-y-16">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop space-y-8 sm:space-y-16">
       
       <!-- Initiative 1 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
-        <div class="space-y-6">
-          <div class="w-16 h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">stethoscope</span>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center bg-surface p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+        <div class="space-y-4 sm:space-y-6">
+          <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl sm:text-4xl">stethoscope</span>
           </div>
-          <h2 class="font-bold text-3xl text-on-background">1. Health Check-up Camps</h2>
-          <p class="text-gray-600 leading-relaxed">
+          <h2 class="font-bold text-2xl sm:text-3xl text-on-background">1. Health Check-up Camps</h2>
+          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
             We conduct free, multi-specialty health camps in rural and semi-urban hubs. Specialist doctors perform routine physical check-ups, blood pressure monitoring, diabetes screening, ECGs, and pediatric wellness checks.
           </p>
-          <div class="grid grid-cols-2 gap-4 pt-2">
-            <div class="bg-white p-4 rounded-xl border border-gray-200">
-              <span class="text-2xl font-bold text-brand-red">450+</span>
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 pt-1">
+            <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-gray-200">
+              <span class="text-xl sm:text-2xl font-bold text-brand-red">450+</span>
               <p class="text-xs text-gray-500 font-semibold">Camps Organized</p>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-200">
-              <span class="text-2xl font-bold text-brand-blue">150K+</span>
+            <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-gray-200">
+              <span class="text-xl sm:text-2xl font-bold text-brand-blue">150K+</span>
               <p class="text-xs text-gray-500 font-semibold">Patients Screened</p>
             </div>
           </div>
-          <button data-open-modal="volunteer" class="bg-brand-red text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center gap-2">
+          <button data-open-modal="volunteer" class="w-full sm:w-auto bg-brand-red text-white px-5 sm:px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base">
             <span class="material-symbols-outlined text-sm">handshake</span> Volunteer for Health Camps
           </button>
         </div>
         <div>
-          <img src="/images/health_checkup_camp.jpg" alt="Free Health Checkup Camp" class="rounded-2xl shadow-xl w-full h-[360px] object-cover" />
+          <img src="/images/health_checkup_camp.jpg" alt="Free Health Checkup Camp" class="rounded-2xl shadow-xl w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover" />
         </div>
       </div>
 
       <!-- Initiative 2 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center bg-surface p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
         <div class="order-2 md:order-1">
-          <img src="/images/blood_donation_camp.jpg" alt="Voluntary Blood Donation Drive" class="rounded-2xl shadow-xl w-full h-[360px] object-cover" />
+          <img src="/images/blood_donation_camp.jpg" alt="Voluntary Blood Donation Drive" class="rounded-2xl shadow-xl w-full h-[220px] sm:h-[300px] md:h-[360px] object-cover" />
         </div>
-        <div class="space-y-6 order-1 md:order-2">
-          <div class="w-16 h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl fill-1">water_drop</span>
+        <div class="space-y-4 sm:space-y-6 order-1 md:order-2">
+          <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl sm:text-4xl fill-1">water_drop</span>
           </div>
-          <h2 class="font-bold text-3xl text-on-background">2. Blood Donation Drives</h2>
-          <p class="text-gray-600 leading-relaxed">
+          <h2 class="font-bold text-2xl sm:text-3xl text-on-background">2. Blood Donation Drives</h2>
+          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
             Partnering with corporate houses, universities, and residential societies to organize safe, hygienic voluntary blood donation camps with licensed medical personnel and component separation facilities.
           </p>
-          <div class="grid grid-cols-2 gap-4 pt-2">
-            <div class="bg-white p-4 rounded-xl border border-gray-200">
-              <span class="text-2xl font-bold text-brand-red">25,000+</span>
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 pt-1">
+            <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-gray-200">
+              <span class="text-xl sm:text-2xl font-bold text-brand-red">25,000+</span>
               <p class="text-xs text-gray-500 font-semibold">Units Collected</p>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-200">
-              <span class="text-2xl font-bold text-brand-blue">24/7</span>
+            <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-gray-200">
+              <span class="text-xl sm:text-2xl font-bold text-brand-blue">24/7</span>
               <p class="text-xs text-gray-500 font-semibold">Emergency Support</p>
             </div>
           </div>
-          <button data-open-modal="donate" class="bg-brand-red text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center gap-2">
+          <a href="contact.html" class="w-full sm:w-auto bg-brand-red text-white px-5 sm:px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base">
             <span class="material-symbols-outlined fill-1 text-sm">favorite</span> Register as Blood Donor
-          </button>
+          </a>
         </div>
       </div>
 
       <!-- Initiative 3 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
-        <div class="space-y-6">
-          <div class="w-16 h-16 rounded-2xl bg-blue-100 text-brand-blue flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">biotech</span>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center bg-surface p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+        <div class="space-y-4 sm:space-y-6">
+          <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-2xl bg-blue-100 text-brand-blue flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl sm:text-4xl">biotech</span>
           </div>
-          <h2 class="font-bold text-3xl text-on-background">3. Free Blood Investigations</h2>
-          <p class="text-gray-600 leading-relaxed">
+          <h2 class="font-bold text-2xl sm:text-3xl text-on-background">3. Free Blood Investigations</h2>
+          <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
             Providing complimentary pathology and hematology testing (CBC, Hemoglobin, Blood Grouping, Liver & Kidney panel) for low-income families and chronic patients who cannot afford diagnostic fees.
           </p>
-          <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-800 transition-colors">
+          <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blue text-white px-5 sm:px-6 py-3 rounded-xl font-bold hover:bg-blue-800 transition-colors text-sm sm:text-base">
             Request Diagnostic Support
             <span class="material-symbols-outlined text-sm">arrow_forward</span>
           </a>
         </div>
         <div>
-          <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-inner space-y-4">
-            <h4 class="font-bold text-lg text-on-background border-b border-gray-100 pb-3">Supported Diagnostics</h4>
-            <ul class="space-y-3 text-sm text-gray-600">
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Complete Blood Count (CBC)</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Hemoglobin & Anemia Screening</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Blood Grouping & Cross Matching</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Infectious Disease Marker Tests (HBsAg, HIV, HCV)</li>
+          <div class="bg-white p-5 sm:p-8 rounded-2xl border border-gray-200 shadow-inner space-y-3 sm:space-y-4">
+            <h4 class="font-bold text-base sm:text-lg text-on-background border-b border-gray-100 pb-2.5 sm:pb-3">Supported Diagnostics</h4>
+            <ul class="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-gray-600">
+              <li class="flex items-center gap-2.5 sm:gap-3"><span class="material-symbols-outlined text-brand-blue text-base sm:text-lg">check_circle</span> Complete Blood Count (CBC)</li>
+              <li class="flex items-center gap-2.5 sm:gap-3"><span class="material-symbols-outlined text-brand-blue text-base sm:text-lg">check_circle</span> Hemoglobin & Anemia Screening</li>
+              <li class="flex items-center gap-2.5 sm:gap-3"><span class="material-symbols-outlined text-brand-blue text-base sm:text-lg">check_circle</span> Blood Grouping & Cross Matching</li>
+              <li class="flex items-center gap-2.5 sm:gap-3"><span class="material-symbols-outlined text-brand-blue text-base sm:text-lg">check_circle</span> Infectious Disease Marker Tests (HBsAg, HIV, HCV)</li>
             </ul>
           </div>
         </div>
       </div>
 
       <!-- Initiative 4 & 5 & 6 Cards Grid -->
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-brand-red flex items-center justify-center">
-            <span class="material-symbols-outlined text-3xl">pill</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div class="bg-surface p-6 sm:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-3 sm:space-y-4 reveal-on-scroll">
+          <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">pill</span>
           </div>
-          <h3 class="font-bold text-xl text-on-background">4. Medicine Distribution</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">Supplying essential antibiotics, iron supplements, multi-vitamins, and emergency medicines directly to rural dispensaries.</p>
+          <h3 class="font-bold text-lg sm:text-xl text-on-background">4. Medicine Distribution</h3>
+          <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Supplying essential antibiotics, iron supplements, multi-vitamins, and emergency medicines directly to rural dispensaries.</p>
         </div>
 
-        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
-          <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center">
-            <span class="material-symbols-outlined text-3xl">coronavirus</span>
+        <div class="bg-surface p-6 sm:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-3 sm:space-y-4 reveal-on-scroll">
+          <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">coronavirus</span>
           </div>
-          <h3 class="font-bold text-xl text-on-background">5. COVID Relief Programs</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">Distributing sanitization kits, oxygen concentrators, and conducting booster vaccination awareness drives.</p>
+          <h3 class="font-bold text-lg sm:text-xl text-on-background">5. COVID Relief Programs</h3>
+          <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Distributing sanitization kits, oxygen concentrators, and conducting booster vaccination awareness drives.</p>
         </div>
 
-        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
-          <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center">
-            <span class="material-symbols-outlined text-3xl">medical_information</span>
+        <div class="bg-surface p-6 sm:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-3 sm:space-y-4 reveal-on-scroll sm:col-span-2 md:col-span-1">
+          <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center">
+            <span class="material-symbols-outlined text-2xl sm:text-3xl">medical_information</span>
           </div>
-          <h3 class="font-bold text-xl text-on-background">6. First Aid Camps</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">Empowering factory workers, school staff, and village volunteers with CPR training and emergency medical kits.</p>
+          <h3 class="font-bold text-lg sm:text-xl text-on-background">6. First Aid Camps</h3>
+          <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Empowering factory workers, school staff, and village volunteers with CPR training and emergency medical kits.</p>
         </div>
       </div>
 
@@ -204,20 +204,20 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-on-background text-gray-300 pt-16 pb-12 border-t border-gray-800 mt-auto">
-    <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
-      <div class="space-y-6">
+  <footer class="bg-on-background text-gray-300 pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-gray-800 mt-auto">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-gutter">
+      <div class="space-y-4 sm:space-y-6">
         <div class="flex items-center gap-3">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 56px; max-height: 56px; width: auto;" class="h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 56px; width: auto;" class="h-12 sm:h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
         </div>
-        <p class="text-gray-400 text-body-sm leading-relaxed">
+        <p class="text-gray-400 text-xs sm:text-body-sm leading-relaxed">
           Dedicated to providing healthcare support and bridging the medical resource gap for India's underserved populations since 2020.
         </p>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Quick Links</h4>
-        <ul class="space-y-3 font-body-sm text-gray-400">
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-base sm:text-lg">Quick Links</h4>
+        <ul class="space-y-2.5 sm:space-y-3 text-xs sm:text-body-sm text-gray-400">
           <li><a href="index.html" class="hover:text-white transition-all">Home</a></li>
           <li><a href="about.html" class="hover:text-white transition-all">About Us</a></li>
           <li><a href="initiatives.html" class="hover:text-white transition-all">Our Initiatives</a></li>
@@ -228,48 +228,48 @@
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Contact Info</h4>
-        <ul class="space-y-4 font-body-sm text-gray-400">
-          <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-brand-red mt-0.5">location_on</span>
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-base sm:text-lg">Contact Info</h4>
+        <ul class="space-y-3 sm:space-y-4 text-xs sm:text-body-sm text-gray-400">
+          <li class="flex items-start gap-2.5 sm:gap-3">
+            <span class="material-symbols-outlined text-brand-red mt-0.5 text-base sm:text-lg">location_on</span>
             <span>Branches in Hapur, Gulaothi (Bulandshahr) & Hasanpur (Amroha), UP</span>
           </li>
-          <li class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-brand-red">call</span>
+          <li class="flex items-center gap-2.5 sm:gap-3">
+            <span class="material-symbols-outlined text-brand-red text-base sm:text-lg">call</span>
             <span>+91 63989 21025 / +91 79007 45068</span>
           </li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-6 text-lg">Support Our Work</h4>
-        <button data-open-modal="donate" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors">
+        <h4 class="font-bold text-white mb-4 sm:mb-6 text-lg">Support Our Work</h4>
+        <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors block text-center text-sm sm:text-base">
           Donate Blood Today
-        </button>
+        </a>
       </div>
     </div>
 
-    <div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-gray-800 flex justify-between items-center text-body-sm text-gray-400">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-body-sm text-gray-400">
       <p>© 2024 Indus Care Foundation. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Modals -->
   <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
+    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-5 sm:p-8 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-4 right-4 sm:top-6 sm:right-6 text-gray-400 hover:text-gray-700">
         <span class="material-symbols-outlined text-2xl">close</span>
       </button>
-      <h3 class="font-bold text-2xl text-on-background mb-4">Blood Donor Registration</h3>
-      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-4">
+      <h3 class="font-bold text-xl sm:text-2xl text-on-background mb-4">Blood Donor Registration</h3>
+      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-3.5 sm:space-y-4">
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-          <input required type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <input required type="text" placeholder="Name" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
-            <select required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none bg-white">
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
+            <select required class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none bg-white">
               <option value="O+">O+</option>
               <option value="A+">A+</option>
               <option value="B+">B+</option>
@@ -277,11 +277,11 @@
             </select>
           </div>
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone *</label>
-            <input required type="tel" placeholder="Phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Phone *</label>
+            <input required type="tel" placeholder="Phone" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
           </div>
         </div>
-        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3.5 rounded-xl transition-all shadow-md">
+        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base">
           Complete Registration
         </button>
       </form>
@@ -289,27 +289,27 @@
   </div>
 
   <div id="volunteerModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
+    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-5 sm:p-8 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-4 right-4 sm:top-6 sm:right-6 text-gray-400 hover:text-gray-700">
         <span class="material-symbols-outlined text-2xl">close</span>
       </button>
-      <h3 class="font-bold text-2xl text-on-background mb-4">Volunteer Registration</h3>
-      <form data-validate data-success-message="Volunteer Application Submitted!" class="space-y-4">
+      <h3 class="font-bold text-xl sm:text-2xl text-on-background mb-4">Volunteer Registration</h3>
+      <form data-validate data-success-message="Volunteer Application Submitted!" class="space-y-3.5 sm:space-y-4">
         <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-          <input required type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <input required type="text" placeholder="Name" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Email *</label>
-            <input required type="email" placeholder="Email" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Email *</label>
+            <input required type="email" placeholder="Email" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
           </div>
           <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone *</label>
-            <input required type="tel" placeholder="Phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Phone *</label>
+            <input required type="tel" placeholder="Phone" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
           </div>
         </div>
-        <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3.5 rounded-xl transition-all shadow-md">
+        <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base">
           Submit Application
         </button>
       </form>
