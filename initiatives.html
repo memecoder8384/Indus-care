@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Initiatives | Indus Care Foundation - Healthcare Programs</title>
+  <meta name="description" content="Explore Indus Care Foundation's 6 core initiatives: Health Check-up Camps, Blood Donation Drives, Free Blood Investigations, Medicine Distribution, COVID Relief, and First Aid Training." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script type="module" src="/js/main.js"></script>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-solid" id="topNav">
+    <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 48px; width: auto;" class="h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
+      </a>
+
+      <div class="hidden md:flex gap-8 items-center font-body-md text-body-md font-semibold">
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="index.html">Home</a>
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="about.html">About Us</a>
+        <a class="text-brand-red border-b-2 border-brand-red pb-1 font-bold" href="initiatives.html">Initiatives</a>
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="blood-centres.html">Blood Centres</a>
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="licences.html">Licences</a>
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="gallery.html">Gallery</a>
+        <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-2">
+          <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
+          Donate Blood
+        </a>
+        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileBackdrop" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"></div>
+  <div id="mobileDrawer" class="mobile-drawer hidden fixed top-0 right-0 h-full w-[300px] z-50 bg-white shadow-2xl p-6 flex flex-col justify-between">
+    <div>
+      <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+        <div class="flex items-center gap-2">
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 40px; max-height: 40px; width: auto;" class="h-10 w-auto" />
+        </div>
+        <button id="closeMobileMenuBtn" class="text-gray-500 hover:text-gray-900 p-1">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-8 font-semibold text-lg">
+        <a href="index.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">About Us</a>
+        <a href="initiatives.html" class="text-brand-red bg-red-50 px-4 py-2.5 rounded-lg">Initiatives</a>
+        <a href="blood-centres.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Blood Centres</a>
+        <a href="licences.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Licences</a>
+        <a href="gallery.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Gallery</a>
+        <a href="contact.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Contact Us</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-gray-100 space-y-3">
+      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <section class="pt-32 pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
+    <div class="max-w-container-max mx-auto px-margin-desktop text-center space-y-4">
+      <span class="text-brand-red font-bold text-sm uppercase tracking-widest bg-red-100 px-4 py-1.5 rounded-full">Community Health Programs</span>
+      <h1 class="font-display-lg text-4xl md:text-5xl font-extrabold text-on-background">Our Key Initiatives</h1>
+      <p class="text-on-surface-variant max-w-2xl mx-auto text-body-lg">
+        Explore how Indus Care Foundation delivers preventive diagnostic care, voluntary donor networks, and emergency relief programs nationwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Detailed Initiatives Section -->
+  <section class="py-stack-lg bg-white">
+    <div class="max-w-container-max mx-auto px-margin-desktop space-y-16">
+      
+      <!-- Initiative 1 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+        <div class="space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl">stethoscope</span>
+          </div>
+          <h2 class="font-bold text-3xl text-on-background">1. Health Check-up Camps</h2>
+          <p class="text-gray-600 leading-relaxed">
+            We conduct free, multi-specialty health camps in rural and semi-urban hubs. Specialist doctors perform routine physical check-ups, blood pressure monitoring, diabetes screening, ECGs, and pediatric wellness checks.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="bg-white p-4 rounded-xl border border-gray-200">
+              <span class="text-2xl font-bold text-brand-red">450+</span>
+              <p class="text-xs text-gray-500 font-semibold">Camps Organized</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-gray-200">
+              <span class="text-2xl font-bold text-brand-blue">150K+</span>
+              <p class="text-xs text-gray-500 font-semibold">Patients Screened</p>
+            </div>
+          </div>
+          <button data-open-modal="volunteer" class="bg-brand-red text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">handshake</span> Volunteer for Health Camps
+          </button>
+        </div>
+        <div>
+          <img src="/images/health_checkup_camp.jpg" alt="Free Health Checkup Camp" class="rounded-2xl shadow-xl w-full h-[360px] object-cover" />
+        </div>
+      </div>
+
+      <!-- Initiative 2 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+        <div class="order-2 md:order-1">
+          <img src="/images/blood_donation_camp.jpg" alt="Voluntary Blood Donation Drive" class="rounded-2xl shadow-xl w-full h-[360px] object-cover" />
+        </div>
+        <div class="space-y-6 order-1 md:order-2">
+          <div class="w-16 h-16 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl fill-1">water_drop</span>
+          </div>
+          <h2 class="font-bold text-3xl text-on-background">2. Blood Donation Drives</h2>
+          <p class="text-gray-600 leading-relaxed">
+            Partnering with corporate houses, universities, and residential societies to organize safe, hygienic voluntary blood donation camps with licensed medical personnel and component separation facilities.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="bg-white p-4 rounded-xl border border-gray-200">
+              <span class="text-2xl font-bold text-brand-red">25,000+</span>
+              <p class="text-xs text-gray-500 font-semibold">Units Collected</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-gray-200">
+              <span class="text-2xl font-bold text-brand-blue">24/7</span>
+              <p class="text-xs text-gray-500 font-semibold">Emergency Support</p>
+            </div>
+          </div>
+          <button data-open-modal="donate" class="bg-brand-red text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center gap-2">
+            <span class="material-symbols-outlined fill-1 text-sm">favorite</span> Register as Blood Donor
+          </button>
+        </div>
+      </div>
+
+      <!-- Initiative 3 -->
+      <div class="grid md:grid-cols-2 gap-12 items-center bg-surface p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm reveal-on-scroll">
+        <div class="space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 text-brand-blue flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl">biotech</span>
+          </div>
+          <h2 class="font-bold text-3xl text-on-background">3. Free Blood Investigations</h2>
+          <p class="text-gray-600 leading-relaxed">
+            Providing complimentary pathology and hematology testing (CBC, Hemoglobin, Blood Grouping, Liver & Kidney panel) for low-income families and chronic patients who cannot afford diagnostic fees.
+          </p>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-800 transition-colors">
+            Request Diagnostic Support
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        <div>
+          <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-inner space-y-4">
+            <h4 class="font-bold text-lg text-on-background border-b border-gray-100 pb-3">Supported Diagnostics</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Complete Blood Count (CBC)</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Hemoglobin & Anemia Screening</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Blood Grouping & Cross Matching</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-brand-blue">check_circle</span> Infectious Disease Marker Tests (HBsAg, HIV, HCV)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Initiative 4 & 5 & 6 Cards Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-red-100 text-brand-red flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl">pill</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-background">4. Medicine Distribution</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Supplying essential antibiotics, iron supplements, multi-vitamins, and emergency medicines directly to rural dispensaries.</p>
+        </div>
+
+        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl">coronavirus</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-background">5. COVID Relief Programs</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Distributing sanitization kits, oxygen concentrators, and conducting booster vaccination awareness drives.</p>
+        </div>
+
+        <div class="bg-surface p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center">
+            <span class="material-symbols-outlined text-3xl">medical_information</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-background">6. First Aid Camps</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Empowering factory workers, school staff, and village volunteers with CPR training and emergency medical kits.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-on-background text-gray-300 pt-16 pb-12 border-t border-gray-800 mt-auto">
+    <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+      <div class="space-y-6">
+        <div class="flex items-center gap-3">
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 56px; max-height: 56px; width: auto;" class="h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
+        </div>
+        <p class="text-gray-400 text-body-sm leading-relaxed">
+          Dedicated to providing healthcare support and bridging the medical resource gap for India's underserved populations since 2020.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white mb-6 text-lg">Quick Links</h4>
+        <ul class="space-y-3 font-body-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-white transition-all">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-all">About Us</a></li>
+          <li><a href="initiatives.html" class="hover:text-white transition-all">Our Initiatives</a></li>
+          <li><a href="blood-centres.html" class="hover:text-white transition-all">Blood Centres</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-all">Photo Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-all">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white mb-6 text-lg">Contact Info</h4>
+        <ul class="space-y-4 font-body-sm text-gray-400">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-red mt-0.5">location_on</span>
+            <span>Branches in Hapur, Gulaothi (Bulandshahr) & Hasanpur (Amroha), UP</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-brand-red">call</span>
+            <span>+91 63989 21025 / +91 79007 45068</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-white mb-6 text-lg">Support Our Work</h4>
+        <button data-open-modal="donate" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors">
+          Donate Blood Today
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-gray-800 flex justify-between items-center text-body-sm text-gray-400">
+      <p>© 2024 Indus Care Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+      <h3 class="font-bold text-2xl text-on-background mb-4">Blood Donor Registration</h3>
+      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-4">
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <input required type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
+            <select required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none bg-white">
+              <option value="O+">O+</option>
+              <option value="A+">A+</option>
+              <option value="B+">B+</option>
+              <option value="AB+">AB+</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone *</label>
+            <input required type="tel" placeholder="Phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3.5 rounded-xl transition-all shadow-md">
+          Complete Registration
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="volunteerModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
+      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+      <h3 class="font-bold text-2xl text-on-background mb-4">Volunteer Registration</h3>
+      <form data-validate data-success-message="Volunteer Application Submitted!" class="space-y-4">
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <input required type="text" placeholder="Name" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Email *</label>
+            <input required type="email" placeholder="Email" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone *</label>
+            <input required type="tel" placeholder="Phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 outline-none"/>
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-brand-blue text-white font-bold py-3.5 rounded-xl transition-all shadow-md">
+          Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
