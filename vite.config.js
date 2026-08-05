@@ -11,6 +11,7 @@ export default defineConfig({
         bloodCentres: resolve(__dirname, 'blood-centres.html'),
         gallery: resolve(__dirname, 'gallery.html'),
         contact: resolve(__dirname, 'contact.html'),
+        licences: resolve(__dirname, 'licences.html'), // <-- Add this line
       },
     },
   },
