@@ -4,7 +4,7 @@ import { initModals } from './modal.js';
 import { initFormValidation } from './forms.js';
 import { initGallery } from './gallery.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
   // Navbar scroll effect
   const nav = document.getElementById('topNav');
   if (nav) {
@@ -75,4 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
   initFormValidation();
   initGallery();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}

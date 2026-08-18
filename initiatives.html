@@ -3,9 +3,68 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Our Initiatives | Indus Care Foundation - Healthcare Programs</title>
-  <meta name="description" content="Explore Indus Care Foundation's 6 core initiatives: Health Check-up Camps, Blood Donation Drives, Free Blood Investigations, Medicine Distribution, COVID Relief, and First Aid Training." />
-  
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Initiatives | Healthcare & Blood Drives in Hapur</title>
+  <meta name="description" content="Discover Indus Care Foundation's healthcare initiatives in Hapur, Gulaothi & Hasanpur: 24/7 blood banks, free health check-up camps & medicine distribution." />
+  <link rel="canonical" href="https://induscarefoundation.com/initiatives.html" />
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Our Initiatives | Healthcare & Blood Drives in Hapur" />
+  <meta property="og:description" content="Discover Indus Care Foundation's healthcare initiatives in Hapur, Gulaothi & Hasanpur: 24/7 blood banks, free health check-up camps & medicine distribution." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://induscarefoundation.com/initiatives.html" />
+  <meta property="og:image" content="https://induscarefoundation.com/images/hero_hd.png" />
+  <meta property="og:site_name" content="Indus Care Foundation" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Initiatives | Healthcare & Blood Drives in Hapur" />
+  <meta name="twitter:description" content="Discover Indus Care Foundation's healthcare initiatives in Hapur, Gulaothi & Hasanpur: 24/7 blood banks, free health check-up camps & medicine distribution." />
+  <meta name="twitter:image" content="https://induscarefoundation.com/images/hero_hd.png" />
+
+  <!-- Schema.org JSON-LD Structured Data for Initiatives / Healthcare Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Healthcare & Voluntary Blood Donation Initiatives",
+    "provider": {
+      "@type": "NGO",
+      "name": "Indus Care Foundation",
+      "url": "https://induscarefoundation.com"
+    },
+    "areaServed": ["Hapur", "Gulaothi", "Hasanpur", "Bulandshahr", "Amroha"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Community Healthcare Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Free Health Check-up Camps"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Voluntary Blood Donation Drives"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Free Blood Diagnostic & Pathology Investigations"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -13,6 +72,205 @@
   <script type="module" src="/js/main.js"></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+
+  <!-- Donate Blood Modal -->
+  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="modal-content bg-white rounded-2xl max-w-xl w-full shadow-2xl relative overflow-hidden border border-red-100 my-auto">
+      <div class="bg-gradient-to-r from-brand-red to-red-700 text-white p-5 sm:p-6 relative">
+        <button data-close-modal type="button" class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-xl sm:text-2xl leading-none">close</span>
+        </button>
+        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-red-200 block mb-1">Indus Care Foundation</span>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white tracking-tight flex items-center gap-2">
+          <span class="material-symbols-outlined fill-1">favorite</span>
+          <span>Become a Blood Donor</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-red-100 mt-1">Schedule your voluntary blood donation and help save lives today.</p>
+      </div>
+      <form data-validate data-success-message="Blood Donation Registration Received! Thank you for choosing to save lives." class="p-5 sm:p-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Donor Full Name *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">person</span>
+              <input required type="text" name="name" placeholder="John Doe" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Phone Number *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">call</span>
+              <input required type="tel" name="phone" placeholder="9876543210" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Age (Years) *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">cake</span>
+              <input required type="number" min="18" max="65" name="age" placeholder="e.g. 25" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Gender *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">wc</span>
+              <select required name="gender" class="w-full pl-10 pr-8 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Blood Group *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">bloodtype</span>
+              <select required name="blood_group" class="w-full pl-10 pr-8 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Don't Know">Don't Know</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Centre *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">location_on</span>
+              <select required name="preferred_centre" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select Nearest Centre</option>
+                <option value="Hapur Charitable Blood Centre">Hapur Charitable Blood Centre</option>
+                <option value="Gulaothi Blood Centre">Gulaothi Blood Centre</option>
+                <option value="Hasanpur Blood Centre">Hasanpur Blood Centre</option>
+                <option value="Mobile Donation Camp">Mobile Donation Camp</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Date <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">calendar_today</span>
+              <input type="date" name="preferred_date" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all text-gray-700"/>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Health Notes / Last Donation <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+          <textarea name="message" rows="2" placeholder="Mention when you last donated blood, or any health conditions..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all resize-none"></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-gray-100">
+          <button type="button" data-close-modal class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-sm transition-colors">Cancel</button>
+          <button type="submit" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md flex items-center gap-2">
+            <span class="material-symbols-outlined fill-1 text-lg">favorite</span>
+            <span>Confirm Donation</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Request Blood Modal -->
+  <div id="requestBloodModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="modal-content bg-white rounded-2xl max-w-xl w-full shadow-2xl relative overflow-hidden border border-gray-100 my-auto">
+      <div class="bg-gradient-to-r from-[#0F2C59] to-[#1E3E62] text-white p-5 sm:p-6 relative">
+        <button data-close-modal type="button" class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-xl sm:text-2xl leading-none">close</span>
+        </button>
+        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200 block mb-1">Indus Care Foundation</span>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white tracking-tight">Request Emergency Blood</h3>
+        <p class="text-xs sm:text-sm text-blue-100 mt-1">Submit your patient blood requirements for immediate support.</p>
+      </div>
+      <form data-validate data-success-message="Blood Request Submitted Successfully! Our team will contact you shortly." class="p-5 sm:p-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Patient Name *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">person</span>
+              <input required type="text" name="patient_name" placeholder="Patient's Full Name" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Contact Phone *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">call</span>
+              <input required type="tel" name="phone" placeholder="9876543210" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Blood Group Needed *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">bloodtype</span>
+              <select required name="blood_group" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Any">Any Group (Emergency)</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Units Required *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">format_list_numbered</span>
+              <input required type="number" min="1" max="10" name="units" placeholder="e.g. 2" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Hospital Name & City *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">local_hospital</span>
+              <input required type="text" name="hospital" placeholder="e.g. City Hospital, Hapur" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Urgency Level *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">warning</span>
+              <select required name="urgency" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="Emergency (Immediate)">Emergency (Immediate)</option>
+                <option value="Within 24 Hours">Within 24 Hours</option>
+                <option value="Planned / Scheduled">Planned / Scheduled</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Patient Notes / Requirement Details <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+          <textarea name="message" rows="2" placeholder="Mention component needed (PRBC, Platelets, FFP, Whole Blood) or doctor advice..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all resize-none"></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-gray-100">
+          <button type="button" data-close-modal class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-sm transition-colors">Cancel</button>
+          <button type="submit" class="bg-[#0F2C59] hover:bg-[#0A2246] text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md">Submit Blood Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-solid" id="topNav">
@@ -31,12 +289,16 @@
         <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
       </div>
 
-      <div class="flex items-center gap-2 sm:gap-4">
-        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-3.5 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-base rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1.5 sm:gap-2">
-          <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button data-open-modal="donate" class="bg-brand-red hover:bg-brand-red-hover text-white px-3 sm:px-5 py-2 text-xs sm:text-sm rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1 sm:gap-2 cursor-pointer">
+          <span class="material-symbols-outlined fill-1 text-sm sm:text-base">favorite</span>
           <span>Donate Blood</span>
-        </a>
-        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" aria-label="Open navigation menu">
+        </button>
+        <button data-open-modal="requestBlood" class="bg-[#0F2C59] hover:bg-[#1E3E62] text-white px-3 sm:px-5 py-2 text-xs sm:text-sm rounded-lg font-bold transition-all shadow-md flex items-center gap-1 sm:gap-2 cursor-pointer">
+          <span class="material-symbols-outlined text-sm sm:text-base">water_drop</span>
+          <span>Request Blood</span>
+        </button>
+        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container ml-1" id="mobileMenuBtn" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -65,10 +327,13 @@
         <a href="contact.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Contact Us</a>
       </nav>
     </div>
-    <div class="pt-6 border-t border-gray-100 space-y-3">
-      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
+    <div class="pt-6 border-t border-gray-100 space-y-2.5">
+      <button data-open-modal="donate" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
-      </a>
+      </button>
+      <button data-open-modal="requestBlood" class="w-full bg-[#0F2C59] hover:bg-[#1E3E62] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
+        <span class="material-symbols-outlined">water_drop</span> Request Blood Now
+      </button>
     </div>
   </div>
 
@@ -76,9 +341,9 @@
   <section class="pt-24 sm:pt-32 pb-10 sm:pb-16 bg-gradient-to-b from-surface-container-high to-surface border-b border-outline-variant/20">
     <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop text-center space-y-3 sm:space-y-4">
       <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3.5 py-1.5 rounded-full inline-block">Community Health Programs</span>
-      <h1 class="font-display-lg text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-background">Our Key Initiatives</h1>
+      <h1 class="font-display-lg text-3xl sm:text-4xl md:text-5xl font-extrabold text-on-background">Healthcare & Blood Donation Initiatives in Hapur, Gulaothi & Hasanpur</h1>
       <p class="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-body-lg">
-        Explore how Indus Care Foundation delivers preventive diagnostic care, voluntary donor networks, and emergency relief programs nationwide.
+        Explore how Indus Care Foundation delivers preventive diagnostic care, voluntary donor networks, and emergency blood support across Hapur, Gulaothi, and Hasanpur.
       </p>
     </div>
   </section>
@@ -139,9 +404,9 @@
               <p class="text-xs text-gray-500 font-semibold">Emergency Support</p>
             </div>
           </div>
-          <a href="contact.html" class="w-full sm:w-auto bg-brand-red text-white px-5 sm:px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base">
+          <button data-open-modal="donate" class="w-full sm:w-auto bg-brand-red text-white px-5 sm:px-6 py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors inline-flex items-center justify-center gap-2 text-sm sm:text-base">
             <span class="material-symbols-outlined fill-1 text-sm">favorite</span> Register as Blood Donor
-          </a>
+          </button>
         </div>
       </div>
 
@@ -243,9 +508,9 @@
 
       <div>
         <h4 class="font-bold text-white mb-4 sm:mb-6 text-lg">Support Our Work</h4>
-        <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors block text-center text-sm sm:text-base">
+        <button data-open-modal="donate" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold hover:bg-brand-red-hover transition-colors block text-center text-sm sm:text-base">
           Donate Blood Today
-        </a>
+        </button>
       </div>
     </div>
 
@@ -255,35 +520,97 @@
   </footer>
 
   <!-- Modals -->
-  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-5 sm:p-8 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-4 right-4 sm:top-6 sm:right-6 text-gray-400 hover:text-gray-700">
-        <span class="material-symbols-outlined text-2xl">close</span>
-      </button>
-      <h3 class="font-bold text-xl sm:text-2xl text-on-background mb-4">Blood Donor Registration</h3>
-      <form data-validate data-success-message="Blood Donor Registration Successful!" class="space-y-3.5 sm:space-y-4">
-        <div>
-          <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-          <input required type="text" placeholder="Name" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-          <div>
-            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
-            <select required class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none bg-white">
-              <option value="O+">O+</option>
-              <option value="A+">A+</option>
-              <option value="B+">B+</option>
-              <option value="AB+">AB+</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs sm:text-sm font-semibold text-gray-700 mb-1">Phone *</label>
-            <input required type="tel" placeholder="Phone" class="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border border-gray-300 outline-none"/>
-          </div>
-        </div>
-        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3 sm:py-3.5 rounded-xl transition-all shadow-md text-sm sm:text-base">
-          Complete Registration
+  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="modal-content bg-white rounded-2xl max-w-xl w-full shadow-2xl relative overflow-hidden border border-gray-100 my-auto">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-[#0F2C59] to-[#1E3E62] text-white p-5 sm:p-6 relative">
+        <button data-close-modal type="button" class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-xl sm:text-2xl leading-none">close</span>
         </button>
+        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200 block mb-1">Indus Care Foundation</span>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white tracking-tight">Book Your Appointment</h3>
+        <p class="text-xs sm:text-sm text-blue-100 mt-1">Schedule your voluntary blood donation and save lives.</p>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form data-validate data-success-message="Blood Donation Appointment Registered Successfully!" class="p-5 sm:p-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Full Name -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Full Name *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">person</span>
+              <input required type="text" name="name" placeholder="John Doe" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Phone Number *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">call</span>
+              <input required type="tel" name="phone" placeholder="9876543210" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blood Group -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Blood Group *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">bloodtype</span>
+            <select required name="blood_group" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+              <option value="" disabled selected>Select Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="Don't Know">Don't Know</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Preferred Date (Optional) -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Date <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">calendar_today</span>
+              <input type="date" name="preferred_date" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all text-gray-700"/>
+            </div>
+          </div>
+
+          <!-- Preferred Time (Optional) -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Time <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">schedule</span>
+              <input type="time" name="preferred_time" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all text-gray-700"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason / Notes (Optional) -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Reason for Visit / Notes <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+          <textarea name="message" rows="2" placeholder="Briefly describe your routine checkup preference or reason..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all resize-none"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-gray-100">
+          <button type="button" data-close-modal class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-sm transition-colors">
+            Cancel
+          </button>
+          <button type="submit" class="bg-[#0F2C59] hover:bg-[#0A2246] text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md">
+            Confirm Appointment
+          </button>
+        </div>
       </form>
     </div>
   </div>

@@ -52,14 +52,35 @@ export function initFormValidation() {
         const nameInput = form.querySelector('[name="name"]');
         const phoneInput = form.querySelector('[name="phone"]');
         const emailInput = form.querySelector('[name="email"]');
+        const bloodGroupInput = form.querySelector('[name="blood_group"]');
+        const prefDateInput = form.querySelector('[name="preferred_date"]');
+        const prefTimeInput = form.querySelector('[name="preferred_time"]');
         const queryTypeInput = form.querySelector('[name="query_type"]') || form.querySelector('[name="subject"]');
         const messageInput = form.querySelector('[name="message"]');
 
         const name = nameInput ? nameInput.value.trim() : '';
         const phone = phoneInput ? phoneInput.value.trim() : '';
         const email = emailInput ? emailInput.value.trim() : '';
-        const queryType = queryTypeInput ? queryTypeInput.value.trim() : '';
-        const message = messageInput ? messageInput.value.trim() : '';
+        const bloodGroup = bloodGroupInput ? bloodGroupInput.value.trim() : '';
+        const prefDate = prefDateInput ? prefDateInput.value.trim() : '';
+        const prefTime = prefTimeInput ? prefTimeInput.value.trim() : '';
+        
+        let queryType = queryTypeInput ? queryTypeInput.value.trim() : '';
+        if (!queryType && bloodGroup) {
+          queryType = `Blood Donation (${bloodGroup})`;
+        } else if (!queryType) {
+          queryType = 'Blood Donation Request';
+        }
+
+        let userNotes = messageInput ? messageInput.value.trim() : '';
+        const details = [];
+        if (bloodGroup) details.push(`Blood Group: ${bloodGroup}`);
+        if (prefDate) details.push(`Preferred Date: ${prefDate}`);
+        if (prefTime) details.push(`Preferred Time: ${prefTime}`);
+        
+        const message = details.length > 0
+          ? (userNotes ? `${userNotes} \n[Appointment Details: ${details.join(' | ')}]` : `[Appointment Details: ${details.join(' | ')}]`)
+          : userNotes;
 
         // 1. Insert into Supabase contact_queries table first
         const supabasePayload = {

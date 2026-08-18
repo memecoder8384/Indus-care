@@ -3,13 +3,65 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Indus Care Foundation | Healing Together & Lifesaving Blood Support</title>
-  <meta name="description" content="Indus Care Foundation provides affordable healthcare, lifesaving blood support, medical camps, and community outreach across India." />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation</title>
+  <meta name="description" content="Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps." />
+  <link rel="canonical" href="https://induscarefoundation.com/index.html" />
   
   <!-- OpenGraph Tags -->
-  <meta property="og:title" content="Indus Care Foundation | Healing Together" />
-  <meta property="og:description" content="Providing free medical check-up camps, charitable blood centres, and life-saving healthcare access." />
+  <meta property="og:title" content="Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation" />
+  <meta property="og:description" content="Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://induscarefoundation.com/index.html" />
+  <meta property="og:image" content="https://induscarefoundation.com/images/hero_hd.png" />
+  <meta property="og:site_name" content="Indus Care Foundation" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation" />
+  <meta name="twitter:description" content="Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps." />
+  <meta name="twitter:image" content="https://induscarefoundation.com/images/hero_hd.png" />
+
+  <!-- JSON-LD Structured Data for LocalBusiness / BloodBank -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Indus Care Foundation",
+    "alternateName": "Charitable Blood Bank Hapur",
+    "url": "https://induscarefoundation.com",
+    "logo": "https://induscarefoundation.com/images/logo.png",
+    "image": "https://induscarefoundation.com/images/hero_hd.png",
+    "description": "Charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, whole blood, PRBC, platelets, FFP & free health checkup camps.",
+    "telephone": "+91-6398921025",
+    "email": "hapurcharitablebloodcenter@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hapur",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Indus Care Charitable Blood Centre Hapur",
+        "address": "Hapur, Uttar Pradesh, India"
+      },
+      {
+        "@type": "Place",
+        "name": "Indus Care Blood Centre Gulaothi",
+        "address": "Gulaothi, Bulandshahr, Uttar Pradesh, India"
+      },
+      {
+        "@type": "Place",
+        "name": "Indus Care Blood Centre Hasanpur",
+        "address": "Hasanpur, Amroha, Uttar Pradesh, India"
+      }
+    ],
+    "medicalSpecialty": ["Hematology", "TransfusionMedicine", "EmergencyCare"]
+  }
+  </script>
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +71,251 @@
   <script type="module" src="/js/main.js"></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+
+  <!-- Donate Blood Modal -->
+  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="modal-content bg-white rounded-2xl max-w-xl w-full shadow-2xl relative overflow-hidden border border-red-100 my-auto">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-brand-red to-red-700 text-white p-5 sm:p-6 relative">
+        <button data-close-modal type="button" class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-xl sm:text-2xl leading-none">close</span>
+        </button>
+        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-red-200 block mb-1">Indus Care Foundation</span>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white tracking-tight flex items-center gap-2">
+          <span class="material-symbols-outlined fill-1">favorite</span>
+          <span>Become a Blood Donor</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-red-100 mt-1">Schedule your voluntary blood donation and help save lives today.</p>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form data-validate data-success-message="Blood Donation Registration Received! Thank you for choosing to save lives." class="p-5 sm:p-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Full Name -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Donor Full Name *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">person</span>
+              <input required type="text" name="name" placeholder="John Doe" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Phone Number *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">call</span>
+              <input required type="tel" name="phone" placeholder="9876543210" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- Donor Age -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Age (Years) *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">cake</span>
+              <input required type="number" min="18" max="65" name="age" placeholder="e.g. 25" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Gender *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">wc</span>
+              <select required name="gender" class="w-full pl-10 pr-8 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+
+          <!-- Blood Group -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Blood Group *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">bloodtype</span>
+              <select required name="blood_group" class="w-full pl-10 pr-8 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Don't Know">Don't Know</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Preferred Centre -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Centre *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">location_on</span>
+              <select required name="preferred_centre" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select Nearest Centre</option>
+                <option value="Hapur Charitable Blood Centre">Hapur Charitable Blood Centre</option>
+                <option value="Gulaothi Blood Centre">Gulaothi Blood Centre</option>
+                <option value="Hasanpur Blood Centre">Hasanpur Blood Centre</option>
+                <option value="Mobile Donation Camp">Mobile Donation Camp</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+
+          <!-- Preferred Date (Optional) -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Preferred Date <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">calendar_today</span>
+              <input type="date" name="preferred_date" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all text-gray-700"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health / Medical Notes (Optional) -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Health Notes / Last Donation <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+          <textarea name="message" rows="2" placeholder="Mention when you last donated blood, or any health conditions..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all resize-none"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-gray-100">
+          <button type="button" data-close-modal class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-sm transition-colors">
+            Cancel
+          </button>
+          <button type="submit" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md flex items-center gap-2">
+            <span class="material-symbols-outlined fill-1 text-lg">favorite</span>
+            <span>Confirm Donation</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Request Blood Modal -->
+  <div id="requestBloodModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+    <div class="modal-content bg-white rounded-2xl max-w-xl w-full shadow-2xl relative overflow-hidden border border-gray-100 my-auto">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-[#0F2C59] to-[#1E3E62] text-white p-5 sm:p-6 relative">
+        <button data-close-modal type="button" class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-xl sm:text-2xl leading-none">close</span>
+        </button>
+        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200 block mb-1">Indus Care Foundation</span>
+        <h3 class="font-extrabold text-xl sm:text-2xl text-white tracking-tight">Request Emergency Blood</h3>
+        <p class="text-xs sm:text-sm text-blue-100 mt-1">Submit your patient blood requirements for immediate support.</p>
+      </div>
+
+      <!-- Modal Body Form -->
+      <form data-validate data-success-message="Blood Request Submitted Successfully! Our team will contact you shortly." class="p-5 sm:p-6 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Patient Name -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Patient Name *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">person</span>
+              <input required type="text" name="patient_name" placeholder="Patient's Full Name" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+
+          <!-- Contact Phone -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Contact Phone *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">call</span>
+              <input required type="tel" name="phone" placeholder="9876543210" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Blood Group -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Blood Group Needed *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">bloodtype</span>
+              <select required name="blood_group" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Any">Any Group (Emergency)</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+
+          <!-- Units Required -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Units Required *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">format_list_numbered</span>
+              <input required type="number" min="1" max="10" name="units" placeholder="e.g. 2" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Hospital Name & City -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Hospital Name & City *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">local_hospital</span>
+              <input required type="text" name="hospital" placeholder="e.g. City Hospital, Hapur" class="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all"/>
+            </div>
+          </div>
+
+          <!-- Urgency Level -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Urgency Level *</label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">warning</span>
+              <select required name="urgency" class="w-full pl-10 pr-9 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all appearance-none bg-white text-gray-800">
+                <option value="Emergency (Immediate)">Emergency (Immediate)</option>
+                <option value="Within 24 Hours">Within 24 Hours</option>
+                <option value="Planned / Scheduled">Planned / Scheduled</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Notes / Requirements -->
+        <div>
+          <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Patient Notes / Requirement Details <span class="text-gray-400 font-normal lowercase">(optional)</span></label>
+          <textarea name="message" rows="2" placeholder="Mention component needed (PRBC, Platelets, FFP, Whole Blood) or doctor advice..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-gray-300 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none transition-all resize-none"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center justify-end gap-3 pt-3 border-t border-gray-100">
+          <button type="button" data-close-modal class="px-5 py-2.5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 font-bold text-sm transition-colors">
+            Cancel
+          </button>
+          <button type="submit" class="bg-[#0F2C59] hover:bg-[#0A2246] text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md">
+            Submit Blood Request
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Top Navigation Header -->
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-glass" id="topNav">
@@ -37,12 +334,16 @@
         <a class="text-on-surface-variant hover:text-brand-red transition-colors" href="contact.html">Contact</a>
       </div>
 
-      <div class="flex items-center gap-2 sm:gap-4">
-        <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-3.5 py-2 text-xs sm:px-6 sm:py-2.5 sm:text-base rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1.5 sm:gap-2">
-          <span class="material-symbols-outlined fill-1 text-sm">favorite</span>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button data-open-modal="donate" class="bg-brand-red hover:bg-brand-red-hover text-white px-3 sm:px-5 py-2 text-xs sm:text-sm rounded-lg font-bold transition-all shadow-md pulse-red-glow flex items-center gap-1 sm:gap-2 cursor-pointer">
+          <span class="material-symbols-outlined fill-1 text-sm sm:text-base">favorite</span>
           <span>Donate Blood</span>
-        </a>
-        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" aria-label="Open navigation menu">
+        </button>
+        <button data-open-modal="requestBlood" class="bg-[#0F2C59] hover:bg-[#1E3E62] text-white px-3 sm:px-5 py-2 text-xs sm:text-sm rounded-lg font-bold transition-all shadow-md flex items-center gap-1 sm:gap-2 cursor-pointer">
+          <span class="material-symbols-outlined text-sm sm:text-base">water_drop</span>
+          <span>Request Blood</span>
+        </button>
+        <button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container ml-1" id="mobileMenuBtn" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -71,39 +372,44 @@
         <a href="contact.html" class="text-gray-700 hover:text-brand-red px-4 py-2.5 rounded-lg hover:bg-gray-50">Contact Us</a>
       </nav>
     </div>
-    <div class="pt-6 border-t border-gray-100 space-y-3">
-      <a href="contact.html" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
+    <div class="pt-6 border-t border-gray-100 space-y-2.5">
+      <button data-open-modal="donate" class="w-full bg-brand-red text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="material-symbols-outlined fill-1">favorite</span> Donate Blood Now
-      </a>
-      <button data-open-modal="volunteer" class="w-full bg-surface-container text-on-surface py-3 rounded-lg font-semibold hover:bg-surface-container-highest transition-colors text-sm sm:text-base">
+      </button>
+      <button data-open-modal="requestBlood" class="w-full bg-[#0F2C59] hover:bg-[#1E3E62] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 text-sm sm:text-base">
+        <span class="material-symbols-outlined">water_drop</span> Request Blood Now
+      </button>
+      <button data-open-modal="volunteer" class="w-full bg-surface-container text-on-surface py-2.5 rounded-lg font-semibold hover:bg-surface-container-highest transition-colors text-xs sm:text-sm">
         Volunteer With Us
       </button>
     </div>
   </div>
 
   <!-- Hero Section -->
-  <header class="relative min-h-[600px] md:h-screen md:min-h-[750px] md:max-h-[950px] flex flex-col justify-center overflow-hidden py-16 md:py-0">
+  <header class="relative min-h-[75vh] md:min-h-[85vh] flex flex-col justify-between pt-24 sm:pt-28 md:pt-32 pb-6 md:pb-8 bg-on-background overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <div class="absolute inset-0 bg-gradient-to-r from-on-background/90 via-on-background/70 to-transparent z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-on-background/95 via-on-background/80 to-transparent z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/30 to-transparent z-10"></div>
       <img alt="Indus Care Healthcare Workers" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000" src="/images/hero.jpg"/>
     </div>
     
-    <div class="relative z-20 px-4 sm:px-6 md:px-margin-desktop max-w-container-max mx-auto w-full pt-12 md:pt-16 pb-28 md:pb-0">
-      <div class="max-w-2xl text-on-primary space-y-4 sm:space-y-6">
+    <!-- Main Hero Text Content -->
+    <div class="relative z-20 px-4 sm:px-6 md:px-margin-desktop max-w-container-max mx-auto w-full flex-1 flex flex-col justify-center py-6 sm:py-8">
+      <div class="max-w-3xl text-on-primary space-y-4 sm:space-y-6">
         <div class="inline-flex items-center gap-2 bg-brand-red/90 text-white px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-widest backdrop-blur-md">
           <span class="material-symbols-outlined text-sm">health_and_safety</span> Saving Lives Across India
         </div>
-        <h1 class="font-display-lg text-3xl sm:text-4xl md:text-display-lg font-extrabold leading-tight text-white">
-          Working Towards a <span class="text-red-400">Healthier Tomorrow</span>
+        <h1 class="font-display-lg text-2xl sm:text-3xl md:text-display-lg font-extrabold leading-tight text-white">
+          Trusted Blood Bank in Hapur | <span class="text-red-400">Blood Center Serving Hapur, Gulaothi & Hasanpur</span>
         </h1>
-        <p class="font-body-lg text-sm sm:text-body-lg text-gray-200 leading-relaxed">
+        <p class="font-body-lg text-sm sm:text-body-lg text-gray-200 leading-relaxed max-w-2xl">
           Providing affordable healthcare, 24/7 lifesaving blood support, medical check-up camps, and community outreach programs to underserved communities across India.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
-          <a href="contact.html" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-xl text-base sm:text-lg hover:-translate-y-0.5">
+          <button data-open-modal="donate" class="bg-brand-red hover:bg-brand-red-hover text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-xl text-base sm:text-lg hover:-translate-y-0.5 cursor-pointer">
             <span class="material-symbols-outlined fill-1">favorite</span>
             Donate Blood
-          </a>
+          </button>
           <a href="about.html" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-base sm:text-lg hover:-translate-y-0.5">
             <span class="material-symbols-outlined">info</span>
             Learn More
@@ -112,25 +418,31 @@
       </div>
     </div>
 
-    <!-- Hero Stats Overlay -->
-    <div class="relative md:absolute bottom-0 left-0 w-full z-20 bg-gradient-to-t from-on-background via-on-background/90 md:via-on-background/80 to-transparent pt-6 md:pt-12">
-      <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-gutter mb-6 md:mb-10">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+    <!-- Hero Stats Cards (Natural flow below CTA buttons) -->
+    <div class="relative w-full z-20 bg-gradient-to-t from-on-background via-on-background/80 to-transparent pt-6 sm:pt-8">
+      <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-gutter mb-4 md:mb-6">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-5 md:p-6 rounded-xl stats-card-glow transition-all">
           <div class="text-white font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">Since 2020</div>
           <div class="text-gray-300 text-xs sm:text-body-sm">Commencing our journey of care</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-5 md:p-6 rounded-xl stats-card-glow transition-all">
           <div class="text-red-400 font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">3 Centres</div>
           <div class="text-gray-300 text-xs sm:text-body-sm">Charitable Blood Centres active</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-5 md:p-6 rounded-xl stats-card-glow transition-all">
           <div class="text-white font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">100+ Partners</div>
           <div class="text-gray-300 text-xs sm:text-body-sm">CSR collaborators nationwide</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-6 rounded-xl stats-card-glow transition-all">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/15 p-4 sm:p-5 md:p-6 rounded-xl stats-card-glow transition-all">
           <div class="text-red-400 font-bold text-lg sm:text-headline-md mb-0.5 sm:mb-1">Thousands</div>
           <div class="text-gray-300 text-xs sm:text-body-sm">Of lives supported & saved</div>
         </div>
+      </div>
+      
+      <!-- Scroll Hint -->
+      <div class="flex justify-center items-center gap-1.5 text-gray-400 text-xs font-medium animate-bounce pt-1">
+        <span>Scroll to explore</span>
+        <span class="material-symbols-outlined text-sm">arrow_downward</span>
       </div>
     </div>
   </header>
@@ -439,9 +751,9 @@
             </div>
           </div>
           <div class="mt-6 sm:mt-10 text-center">
-            <a href="contact.html" class="inline-block bg-brand-red text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:bg-brand-red-hover transition-all shadow-xl pulse-red-glow">
+            <button data-open-modal="donate" class="inline-block bg-brand-red text-white px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-lg hover:bg-brand-red-hover transition-all shadow-xl pulse-red-glow">
               Become a Blood Donor
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -453,28 +765,74 @@
     <div class="max-w-container-max mx-auto px-margin-desktop">
       <div class="text-center mb-16 space-y-3">
         <h2 class="font-headline-md text-3xl md:text-4xl font-extrabold text-white">Our Growing Impact</h2>
-        <p class="text-gray-300 max-w-xl mx-auto text-body-lg">Real numbers reflecting real lives touched and supported across the nation.</p>
+        <p class="text-gray-300 max-w-xl mx-auto text-body-lg">Real numbers reflecting real lives touched and supported across Hapur, Gulaothi, Hasanpur & UP.</p>
       </div>
       <div class="grid md:grid-cols-4 gap-gutter text-center">
         <div class="space-y-4 p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-md">
-          <div class="text-5xl font-extrabold text-red-400 counter" data-target="3">0</div>
+          <div class="text-5xl font-extrabold text-red-400 counter" data-target="3">3</div>
           <div class="h-1 w-12 bg-brand-red mx-auto rounded-full"></div>
           <p class="text-label-caps text-gray-300 tracking-widest uppercase font-semibold">Blood Centres</p>
         </div>
         <div class="space-y-4 p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-md">
-          <div class="text-5xl font-extrabold text-red-400 counter" data-target="25000">0</div>
+          <div class="text-5xl font-extrabold text-red-400 counter" data-target="25000">25,000+</div>
           <div class="h-1 w-12 bg-brand-red mx-auto rounded-full"></div>
           <p class="text-label-caps text-gray-300 tracking-widest uppercase font-semibold">Blood Units Provided</p>
         </div>
         <div class="space-y-4 p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-md">
-          <div class="text-5xl font-extrabold text-red-400 counter" data-target="450">0</div>
+          <div class="text-5xl font-extrabold text-red-400 counter" data-target="450">450+</div>
           <div class="h-1 w-12 bg-brand-red mx-auto rounded-full"></div>
           <p class="text-label-caps text-gray-300 tracking-widest uppercase font-semibold">Health Camps</p>
         </div>
         <div class="space-y-4 p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-md">
-          <div class="text-5xl font-extrabold text-red-400 counter" data-target="150000">0</div>
+          <div class="text-5xl font-extrabold text-red-400 counter" data-target="150000">150,000+</div>
           <div class="h-1 w-12 bg-brand-red mx-auto rounded-full"></div>
           <p class="text-label-caps text-gray-300 tracking-widest uppercase font-semibold">Direct Beneficiaries</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions Section (Local SEO & Search Intent) -->
+  <section class="py-stack-lg bg-surface reveal-on-scroll border-t border-outline-variant/10">
+    <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop">
+      <div class="text-center mb-12 space-y-3">
+        <span class="text-brand-red font-bold text-xs sm:text-sm uppercase tracking-widest bg-red-100 px-3 py-1 rounded-full">Got Questions?</span>
+        <h2 class="font-headline-md text-on-background text-2xl sm:text-3xl md:text-4xl font-extrabold">Frequently Asked Questions</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-body-lg">
+          Common queries about finding a blood bank in Hapur, emergency blood services, and donation procedures.
+        </p>
+        <div class="h-1.5 w-24 bg-brand-red mx-auto rounded-full mt-2"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-4">
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <h3 class="font-bold text-base sm:text-lg text-on-background flex items-center gap-2">
+            <span class="material-symbols-outlined text-brand-red">help</span>
+            Where is the nearest blood bank near me in Hapur?
+          </h3>
+          <p class="text-gray-600 text-sm sm:text-body-md mt-2 leading-relaxed">
+            Indus Care Foundation operates a 24/7 charitable blood bank & blood center in Hapur, serving patients across Hapur, Gulaothi, and Hasanpur. You can reach our emergency helpline at +91 63989 21025 or +91 79007 45068 anytime for immediate blood support.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <h3 class="font-bold text-base sm:text-lg text-on-background flex items-center gap-2">
+            <span class="material-symbols-outlined text-brand-red">help</span>
+            What blood components are available at Indus Care Blood Center in Hapur?
+          </h3>
+          <p class="text-gray-600 text-sm sm:text-body-md mt-2 leading-relaxed">
+            Our charitable blood center provides Whole Human Blood, Packed Red Blood Cells (PRBC), Single Donor Platelets (SDP Apheresis Jumbo Packs), Platelet Concentrates, and Fresh Frozen Plasma (FFP).
+          </p>
+        </div>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <h3 class="font-bold text-base sm:text-lg text-on-background flex items-center gap-2">
+            <span class="material-symbols-outlined text-brand-red">help</span>
+            Are emergency blood services available 24/7 in Hapur, Gulaothi & Hasanpur?
+          </h3>
+          <p class="text-gray-600 text-sm sm:text-body-md mt-2 leading-relaxed">
+            Yes, our emergency blood services and blood donation centres operate 24 hours a day, 7 days a week across Hapur, Gulaothi (Bulandshahr), and Hasanpur (Amroha).
+          </p>
         </div>
       </div>
     </div>
@@ -488,12 +846,12 @@
     <div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
       <h2 class="font-display-lg text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Every Drop Saves a Life</h2>
       <p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto opacity-90 leading-relaxed">
-        Join hands with Indus Care Foundation. Whether you give blood or support our community health outreach, your involvement saves precious lives.
+        Join hands with Indus Care Foundation. Whether you give blood or support our community health outreach in Hapur, Gulaothi & Hasanpur, your involvement saves precious lives.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-6">
-        <a href="contact.html" class="bg-white text-brand-red px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl inline-block text-center">
+        <button data-open-modal="donate" class="bg-white text-brand-red px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl inline-block text-center">
           Donate Blood Now
-        </a>
+        </button>
         <a href="contact.html" class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-brand-red transition-all">
           Partner With Us
         </a>
@@ -577,66 +935,7 @@
     </div>
   </footer>
 
-  <!-- Donate Blood Modal -->
-  <div id="donateModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="modal-content bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative border border-gray-100">
-      <button data-close-modal class="absolute top-6 right-6 text-gray-400 hover:text-gray-700">
-        <span class="material-symbols-outlined text-2xl">close</span>
-      </button>
-      <div class="flex items-center gap-3 mb-6">
-        <div class="w-12 h-12 rounded-full bg-red-100 text-brand-red flex items-center justify-center font-bold">
-          <span class="material-symbols-outlined fill-1 text-2xl">water_drop</span>
-        </div>
-        <div>
-          <h3 class="font-bold text-2xl text-on-background">Blood Donor Registration</h3>
-          <p class="text-sm text-gray-500">Register as a life saver with Indus Care Foundation</p>
-        </div>
-      </div>
 
-      <form data-validate data-success-message="Blood Donor Registration Successful! Our team will contact you shortly." class="space-y-4">
-        <div>
-          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-          <input required type="text" placeholder="e.g. Rahul Sharma" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none"/>
-        </div>
-        
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Blood Group *</label>
-            <select required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none bg-white">
-              <option value="">Select</option>
-              <option value="A+">A+</option>
-              <option value="A-">A-</option>
-              <option value="B+">B+</option>
-              <option value="B-">B-</option>
-              <option value="O+">O+</option>
-              <option value="O-">O-</option>
-              <option value="AB+">AB+</option>
-              <option value="AB-">AB-</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
-            <input required type="tel" placeholder="10-digit phone" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none"/>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
-            <input required type="email" placeholder="name@email.com" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none"/>
-          </div>
-          <div>
-            <label class="block text-sm font-semibold text-gray-700 mb-1">City / Region *</label>
-            <input required type="text" placeholder="e.g. Hapur / Delhi" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none"/>
-          </div>
-        </div>
-
-        <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3.5 rounded-xl transition-all shadow-md mt-2 flex items-center justify-center gap-2">
-          <span class="material-symbols-outlined fill-1 text-sm">favorite</span> Complete Donor Registration
-        </button>
-      </form>
-    </div>
-  </div>
 
   <!-- Volunteer Modal -->
   <div id="volunteerModal" class="modal-backdrop hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">

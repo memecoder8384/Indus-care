@@ -13,6 +13,14 @@ export function initModals() {
       return;
     }
 
+    // Open Request Blood Modal
+    const requestBtn = e.target.closest('[data-open-modal="requestBlood"]') || e.target.closest('[data-open-modal="request"]');
+    if (requestBtn) {
+      e.preventDefault();
+      openModal('requestBloodModal');
+      return;
+    }
+
     // Open Volunteer Modal
     const volunteerBtn = e.target.closest('[data-open-modal="volunteer"]');
     if (volunteerBtn) {
@@ -59,14 +67,54 @@ export function initModals() {
 export function openModal(modalId) {
   const modal = document.getElementById(modalId);
   if (!modal) return;
+
+  // Temporarily disable smooth scrolling to instantly jump to top (y=0) before locking overflow
+  const originalScrollBehavior = document.documentElement.style.scrollBehavior;
+  document.documentElement.style.scrollBehavior = 'auto';
+  document.body.style.scrollBehavior = 'auto';
+
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+
+  document.documentElement.style.scrollBehavior = originalScrollBehavior;
+  document.body.style.scrollBehavior = '';
+
+  // Reset internal scroll container
+  modal.scrollTop = 0;
+  const content = modal.querySelector('.modal-content');
+  if (content) content.scrollTop = 0;
+
+  modal.classList.remove('hidden');
   modal.classList.add('active');
+  modal.style.setProperty('display', 'flex', 'important');
+  modal.style.setProperty('visibility', 'visible', 'important');
+  modal.style.setProperty('opacity', '1', 'important');
+  modal.style.setProperty('pointer-events', 'auto', 'important');
+  modal.style.setProperty('position', 'fixed', 'important');
+  modal.style.setProperty('top', '0', 'important');
+  modal.style.setProperty('left', '0', 'important');
+  modal.style.setProperty('width', '100%', 'important');
+  modal.style.setProperty('height', '100%', 'important');
+  modal.style.setProperty('z-index', '99999', 'important');
+
   document.body.style.overflow = 'hidden';
+
+  requestAnimationFrame(() => {
+    modal.scrollTop = 0;
+    if (content) content.scrollTop = 0;
+  });
 }
 
 export function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (!modal) return;
   modal.classList.remove('active');
+  modal.classList.add('hidden');
+  modal.style.setProperty('display', 'none', 'important');
+  modal.style.setProperty('visibility', 'hidden', 'important');
+  modal.style.setProperty('opacity', '0', 'important');
+  modal.style.setProperty('pointer-events', 'none', 'important');
   document.body.style.overflow = '';
 }
 

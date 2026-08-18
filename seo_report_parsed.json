@@ -1,0 +1,510 @@
+{
+  "Final Title & Description": [
+    {
+      "row": "1",
+      "cells": {
+        "A1": "Final Title Tags & Meta Descriptions — Ready to Publish",
+        "B1": "",
+        "C1": "",
+        "D1": ""
+      }
+    },
+    {
+      "row": "2",
+      "cells": {
+        "A2": "Copy directly into your CMS. Character counts included so nothing gets truncated in Google search results.",
+        "B2": "",
+        "C2": "",
+        "D2": ""
+      }
+    },
+    {
+      "row": "4",
+      "cells": {
+        "A4": "Page / URL",
+        "B4": "Title Tag (New)",
+        "C4": "Meta Description (New)",
+        "D4": "Char Count (Title / Description)"
+      }
+    },
+    {
+      "row": "5",
+      "cells": {
+        "A5": "Homepage\ninduscarefoundation.com/index.html",
+        "B5": "Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation",
+        "C5": "Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps.",
+        "D5": "67 / 183"
+      }
+    },
+    {
+      "row": "6",
+      "cells": {
+        "A6": "Blood Centres\ninduscarefoundation.com/blood-centres.html",
+        "B6": "Blood Bank Near Me | Blood Center in Hapur, Gulaothi & Hasanpur",
+        "C6": "Find a trusted blood bank near you in Hapur, Gulaothi & Hasanpur. Our charitable blood center offers whole blood, PRBC, platelets & emergency blood services, 24/7.",
+        "D6": "63 / 163"
+      }
+    },
+    {
+      "row": "7",
+      "cells": {
+        "A7": "About Us\ninduscarefoundation.com/about.html",
+        "B7": "About Us | Charitable Blood Bank Hapur – Indus Care Foundation",
+        "C7": "Indus Care Foundation is a charitable blood bank in Hapur, committed to emergency blood services, blood donation camps & healthcare outreach since 2020.",
+        "D7": "62 / 152"
+      }
+    },
+    {
+      "row": "8",
+      "cells": {
+        "A8": "Initiatives\ninduscarefoundation.com/initiatives.html",
+        "B8": "Blood Donation Camp in Hapur | Our Initiatives – Indus Care Foundation",
+        "C8": "Explore our blood donation camps in Hapur, free health check-up camps & medicine distribution drives supporting underserved communities across UP.",
+        "D8": "70 / 146"
+      }
+    },
+    {
+      "row": "9",
+      "cells": {
+        "A9": "Contact Us\ninduscarefoundation.com/contact.html",
+        "B9": "Emergency Blood Services Hapur | Contact Us – Indus Care Foundation",
+        "C9": "Need emergency blood services in Hapur? Call our 24/7 helpline or visit our blood bank in Hapur, Gulaothi or Hasanpur. Register as a donor today.",
+        "D9": "67 / 145"
+      }
+    },
+    {
+      "row": "10",
+      "cells": {
+        "A10": "Gallery\ninduscarefoundation.com/gallery.html",
+        "B10": "Photo Gallery | Blood Donation Camps in Hapur – Indus Care Foundation",
+        "C10": "Browse photos from our blood donation camps, health check-up drives & community outreach programs across Hapur, Gulaothi & Hasanpur.",
+        "D10": "69 / 132"
+      }
+    }
+  ],
+  "Keyword Strategy": [
+    {
+      "row": "1",
+      "cells": {
+        "A1": "Indus Care Foundation — SEO Keyword Strategy",
+        "B1": "",
+        "C1": "",
+        "D1": ""
+      }
+    },
+    {
+      "row": "2",
+      "cells": {
+        "A2": "Target market: Hapur, Gulaothi & Hasanpur (UP) blood bank / blood center services",
+        "B2": "",
+        "C2": "",
+        "D2": ""
+      }
+    },
+    {
+      "row": "4",
+      "cells": {
+        "A4": "Keyword Type",
+        "B4": "Keyword",
+        "C4": "Search Intent",
+        "D4": "Recommended Placement"
+      }
+    },
+    {
+      "row": "5",
+      "cells": {
+        "A5": "Primary",
+        "B5": "Blood bank in Hapur",
+        "C5": "Local / Transactional",
+        "D5": "Homepage Title, H1, Blood Centres page Title & H1"
+      }
+    },
+    {
+      "row": "6",
+      "cells": {
+        "A6": "Primary",
+        "B6": "Blood center in Hapur",
+        "C6": "Local / Transactional",
+        "D6": "Homepage Title, Meta Description, Blood Centres page"
+      }
+    },
+    {
+      "row": "7",
+      "cells": {
+        "A7": "Secondary",
+        "B7": "Blood bank near me",
+        "C7": "Local / High Intent",
+        "D7": "Blood Centres page H1, Contact page, Google Business Profile"
+      }
+    },
+    {
+      "row": "8",
+      "cells": {
+        "A8": "Secondary",
+        "B8": "Charitable Blood Bank Hapur",
+        "C8": "Trust / Branded-local",
+        "D8": "About Us page Title, Meta Description, body content"
+      }
+    },
+    {
+      "row": "9",
+      "cells": {
+        "A9": "Secondary",
+        "B9": "Emergency Blood Services Hapur",
+        "C9": "Urgent / Transactional",
+        "D9": "Contact page Title, Blood Centres page, homepage CTA section"
+      }
+    },
+    {
+      "row": "10",
+      "cells": {
+        "A10": "Secondary",
+        "B10": "Blood Donation Camp Hapur",
+        "C10": "Informational / Community",
+        "D10": "Initiatives page Title, Meta Description, blog/news content"
+      }
+    }
+  ],
+  "Title & Meta - Old vs New": [
+    {
+      "row": "1",
+      "cells": {
+        "A1": "Title Tag & Meta Description Rewrite — Old vs New",
+        "B1": "",
+        "C1": "",
+        "D1": "",
+        "E1": "",
+        "F1": ""
+      }
+    },
+    {
+      "row": "2",
+      "cells": {
+        "A2": "Note: 'Old' values are only shown where they were verifiable on-site. Where a page's current tag could not be fetched, it is marked N/A.",
+        "B2": "",
+        "C2": "",
+        "D2": "",
+        "E2": "",
+        "F2": ""
+      }
+    },
+    {
+      "row": "4",
+      "cells": {
+        "A4": "Page / URL",
+        "B4": "Element",
+        "C4": "OLD (Current)",
+        "D4": "NEW (Recommended)",
+        "E4": "Char. Count (New)",
+        "F4": "Primary Keyword Used"
+      }
+    },
+    {
+      "row": "5",
+      "cells": {
+        "A5": "Homepage\ninduscarefoundation.com/index.html",
+        "B5": "Title Tag",
+        "C5": "Indus Care Foundation | Healing Together & Lifesaving Blood Support",
+        "D5": "Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation",
+        "E5": "67",
+        "F5": "Blood bank in Hapur / Blood center in Hapur"
+      }
+    },
+    {
+      "row": "6",
+      "cells": {
+        "A6": "",
+        "B6": "Meta Description",
+        "C6": "Indus Care Foundation provides affordable healthcare, lifesaving blood support, medical camps, and community outreach across India.",
+        "D6": "Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps.",
+        "E6": "183",
+        "F6": "Blood bank in Hapur / Blood center in Hapur"
+      }
+    },
+    {
+      "row": "7",
+      "cells": {
+        "A7": "Blood Centres\ninduscarefoundation.com/blood-centres.html",
+        "B7": "Title Tag",
+        "C7": "Not verifiable in current crawl (page not indexed) — assumed generic \"Blood Centres - Indus Care Foundation\"",
+        "D7": "Blood Bank Near Me | Blood Center in Hapur, Gulaothi & Hasanpur",
+        "E7": "63",
+        "F7": "Blood bank near me / Blood center in Hapur"
+      }
+    },
+    {
+      "row": "8",
+      "cells": {
+        "A8": "",
+        "B8": "Meta Description",
+        "C8": "Not verifiable in current crawl (page not indexed)",
+        "D8": "Find a trusted blood bank near you in Hapur, Gulaothi & Hasanpur. Our charitable blood center offers whole blood, PRBC, platelets & emergency blood services, 24/7.",
+        "E8": "163",
+        "F8": "Blood bank near me / Blood center in Hapur"
+      }
+    },
+    {
+      "row": "9",
+      "cells": {
+        "A9": "About Us\ninduscarefoundation.com/about.html",
+        "B9": "Title Tag",
+        "C9": "Not verifiable in current crawl (page not indexed) — assumed generic \"About Us - Indus Care Foundation\"",
+        "D9": "About Us | Charitable Blood Bank Hapur – Indus Care Foundation",
+        "E9": "62",
+        "F9": "Charitable Blood Bank Hapur"
+      }
+    },
+    {
+      "row": "10",
+      "cells": {
+        "A10": "",
+        "B10": "Meta Description",
+        "C10": "Not verifiable in current crawl (page not indexed)",
+        "D10": "Indus Care Foundation is a charitable blood bank in Hapur, committed to emergency blood services, blood donation camps & healthcare outreach since 2020.",
+        "E10": "152",
+        "F10": "Charitable Blood Bank Hapur"
+      }
+    },
+    {
+      "row": "11",
+      "cells": {
+        "A11": "Initiatives\ninduscarefoundation.com/initiatives.html",
+        "B11": "Title Tag",
+        "C11": "Not verifiable in current crawl (page not indexed) — assumed generic \"Initiatives - Indus Care Foundation\"",
+        "D11": "Blood Donation Camp in Hapur | Our Initiatives – Indus Care Foundation",
+        "E11": "70",
+        "F11": "Blood Donation Camp Hapur"
+      }
+    },
+    {
+      "row": "12",
+      "cells": {
+        "A12": "",
+        "B12": "Meta Description",
+        "C12": "Not verifiable in current crawl (page not indexed)",
+        "D12": "Explore our blood donation camps in Hapur, free health check-up camps & medicine distribution drives supporting underserved communities across UP.",
+        "E12": "146",
+        "F12": "Blood Donation Camp Hapur"
+      }
+    },
+    {
+      "row": "13",
+      "cells": {
+        "A13": "Contact Us\ninduscarefoundation.com/contact.html",
+        "B13": "Title Tag",
+        "C13": "Not verifiable in current crawl (page not indexed) — assumed generic \"Contact Us - Indus Care Foundation\"",
+        "D13": "Emergency Blood Services Hapur | Contact Us – Indus Care Foundation",
+        "E13": "67",
+        "F13": "Emergency Blood Services Hapur"
+      }
+    },
+    {
+      "row": "14",
+      "cells": {
+        "A14": "",
+        "B14": "Meta Description",
+        "C14": "Not verifiable in current crawl (page not indexed)",
+        "D14": "Need emergency blood services in Hapur? Call our 24/7 helpline or visit our blood bank in Hapur, Gulaothi or Hasanpur. Register as a donor today.",
+        "E14": "145",
+        "F14": "Emergency Blood Services Hapur"
+      }
+    },
+    {
+      "row": "15",
+      "cells": {
+        "A15": "Gallery\ninduscarefoundation.com/gallery.html",
+        "B15": "Title Tag",
+        "C15": "Not verifiable in current crawl (page not indexed) — assumed generic \"Gallery - Indus Care Foundation\"",
+        "D15": "Photo Gallery | Blood Donation Camps in Hapur – Indus Care Foundation",
+        "E15": "69",
+        "F15": "Blood Donation Camp Hapur"
+      }
+    },
+    {
+      "row": "16",
+      "cells": {
+        "A16": "",
+        "B16": "Meta Description",
+        "C16": "Not verifiable in current crawl (page not indexed)",
+        "D16": "Browse photos from our blood donation camps, health check-up drives & community outreach programs across Hapur, Gulaothi & Hasanpur.",
+        "E16": "132",
+        "F16": "Blood Donation Camp Hapur"
+      }
+    }
+  ],
+  "H1 & Content Recommendations": [
+    {
+      "row": "1",
+      "cells": {
+        "A1": "H1 Tags & On-Page Content Recommendations",
+        "B1": "",
+        "C1": "",
+        "D1": ""
+      }
+    },
+    {
+      "row": "3",
+      "cells": {
+        "A3": "Page",
+        "B3": "OLD H1 / Content Gap",
+        "C3": "NEW H1 (Recommended)",
+        "D3": "Additional Content to Add"
+      }
+    },
+    {
+      "row": "4",
+      "cells": {
+        "A4": "Homepage",
+        "B4": "\"Working Towards a Healthier Tomorrow\" — no target keyword present",
+        "C4": "Trusted Blood Bank in Hapur | Blood Center Serving Hapur, Gulaothi & Hasanpur",
+        "D4": "Add a short intro paragraph (100-150 words) below the hero using 'blood bank in Hapur' and 'blood center in Hapur' naturally 2-3 times. Add an FAQ block answering 'Where is the nearest blood bank near me in Hapur?' Add city/area names in body text, not just footer."
+      }
+    },
+    {
+      "row": "5",
+      "cells": {
+        "A5": "Blood Centres page",
+        "B5": "No unique keyword-rich intro paragraph (not verifiable — likely just a list of centres)",
+        "C5": "Blood Bank Near Me — Our Blood Centers in Hapur, Gulaothi & Hasanpur",
+        "D5": "Add individual sub-sections per centre, each with its own H2 (e.g. 'Blood Bank in Hapur', 'Blood Center in Gulaothi', 'Blood Center in Hasanpur') with address, timings, phone number and Google Map embed for local SEO. Add schema markup (LocalBusiness / MedicalOrganization)."
+      }
+    },
+    {
+      "row": "6",
+      "cells": {
+        "A6": "About Us page",
+        "B6": "Generic mission statement, no local/charitable keyword emphasis",
+        "C6": "About Our Charitable Blood Bank in Hapur",
+        "D6": "Add a paragraph explaining charitable/non-profit status (80G & 12A) using 'Charitable Blood Bank Hapur' phrase, founding story, and service area (Hapur, Gulaothi, Hasanpur, wider Delhi NCR)."
+      }
+    },
+    {
+      "row": "7",
+      "cells": {
+        "A7": "Initiatives page",
+        "B7": "\"Impact In Action\" — generic, no location keyword",
+        "C7": "Blood Donation Camps in Hapur & Community Health Initiatives",
+        "D7": "Add a dedicated section titled 'Blood Donation Camp Hapur' listing past/upcoming camps with dates and locations. Add testimonials or photos from actual Hapur camps to build local relevance and freshness."
+      }
+    },
+    {
+      "row": "8",
+      "cells": {
+        "A8": "Contact page",
+        "B8": "\"Request Blood / Components\" — no urgency/location keyword in heading",
+        "C8": "Emergency Blood Services in Hapur — Contact Us 24/7",
+        "D8": "Add a prominent 'Emergency Blood Services Hapur' heading above the helpline number. Add full address with pin code for each centre (Hapur, Gulaothi, Hasanpur) for local pack ranking. Embed Google Map."
+      }
+    }
+  ],
+  "Action Plan": [
+    {
+      "row": "1",
+      "cells": {
+        "A1": "SEO Action Plan — Priority Order",
+        "B1": "",
+        "C1": "",
+        "D1": ""
+      }
+    },
+    {
+      "row": "3",
+      "cells": {
+        "A3": "#",
+        "B3": "Action",
+        "C3": "Priority",
+        "D3": "Notes"
+      }
+    },
+    {
+      "row": "4",
+      "cells": {
+        "A4": "1",
+        "B4": "Update Title Tags & Meta Descriptions on all 6 pages (see 'Title & Meta - Old vs New' tab)",
+        "C4": "High",
+        "D4": "Do first — direct ranking + CTR impact"
+      }
+    },
+    {
+      "row": "5",
+      "cells": {
+        "A5": "2",
+        "B5": "Submit sitemap.xml to Google Search Console; verify property",
+        "C5": "High",
+        "D5": "Site pages not currently appearing in Google index"
+      }
+    },
+    {
+      "row": "6",
+      "cells": {
+        "A6": "3",
+        "B6": "Update H1 tags on Homepage, Blood Centres, About, Initiatives & Contact pages",
+        "C6": "High",
+        "D6": "See 'H1 & Content Recommendations' tab"
+      }
+    },
+    {
+      "row": "7",
+      "cells": {
+        "A7": "4",
+        "B7": "Add city-specific content blocks (Hapur, Gulaothi, Hasanpur) with target keywords",
+        "C7": "High",
+        "D7": "Improves local relevance for 'near me' searches"
+      }
+    },
+    {
+      "row": "8",
+      "cells": {
+        "A8": "5",
+        "B8": "Create/claim Google Business Profile for each blood centre (Hapur, Gulaothi, Hasanpur)",
+        "C8": "High",
+        "D8": "Essential for 'blood bank near me' local pack ranking"
+      }
+    },
+    {
+      "row": "9",
+      "cells": {
+        "A9": "6",
+        "B9": "Add LocalBusiness/MedicalOrganization schema markup to Blood Centres & Contact pages",
+        "C9": "Medium",
+        "D9": "Helps Google understand location & services"
+      }
+    },
+    {
+      "row": "10",
+      "cells": {
+        "A10": "7",
+        "B10": "Add og:image and og:url meta tags for social sharing previews",
+        "C10": "Medium",
+        "D10": "Currently missing — broken link previews on WhatsApp/Facebook"
+      }
+    },
+    {
+      "row": "11",
+      "cells": {
+        "A11": "8",
+        "B11": "Fix placeholder footer links (#) — social icons, Terms, Transparency, CSR Support",
+        "C11": "Medium",
+        "D11": "Trust and crawlability issue"
+      }
+    },
+    {
+      "row": "12",
+      "cells": {
+        "A12": "9",
+        "B12": "Update copyright year in footer (currently 2024)",
+        "C12": "Low",
+        "D12": "Minor trust/freshness signal"
+      }
+    },
+    {
+      "row": "13",
+      "cells": {
+        "A13": "10",
+        "B13": "Add fallback static numbers for JS-animated impact counters",
+        "C13": "Medium",
+        "D13": "Currently show '0' if JS fails to load"
+      }
+    }
+  ]
+}

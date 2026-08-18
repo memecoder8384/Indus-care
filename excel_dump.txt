@@ -1,0 +1,73 @@
+=== SHEET: Final Title & Description ===
+Final Title Tags & Meta Descriptions — Ready to Publish |  |  | 
+Copy directly into your CMS. Character counts included so nothing gets truncated in Google search results. |  |  | 
+Page / URL | Title Tag (New) | Meta Description (New) | Char Count (Title / Description)
+Homepage
+induscarefoundation.com/index.html | Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation | Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps. | 67 / 183
+Blood Centres
+induscarefoundation.com/blood-centres.html | Blood Bank Near Me | Blood Center in Hapur, Gulaothi & Hasanpur | Find a trusted blood bank near you in Hapur, Gulaothi & Hasanpur. Our charitable blood center offers whole blood, PRBC, platelets & emergency blood services, 24/7. | 63 / 163
+About Us
+induscarefoundation.com/about.html | About Us | Charitable Blood Bank Hapur – Indus Care Foundation | Indus Care Foundation is a charitable blood bank in Hapur, committed to emergency blood services, blood donation camps & healthcare outreach since 2020. | 62 / 152
+Initiatives
+induscarefoundation.com/initiatives.html | Blood Donation Camp in Hapur | Our Initiatives – Indus Care Foundation | Explore our blood donation camps in Hapur, free health check-up camps & medicine distribution drives supporting underserved communities across UP. | 70 / 146
+Contact Us
+induscarefoundation.com/contact.html | Emergency Blood Services Hapur | Contact Us – Indus Care Foundation | Need emergency blood services in Hapur? Call our 24/7 helpline or visit our blood bank in Hapur, Gulaothi or Hasanpur. Register as a donor today. | 67 / 145
+Gallery
+induscarefoundation.com/gallery.html | Photo Gallery | Blood Donation Camps in Hapur – Indus Care Foundation | Browse photos from our blood donation camps, health check-up drives & community outreach programs across Hapur, Gulaothi & Hasanpur. | 69 / 132
+
+=== SHEET: Keyword Strategy ===
+Indus Care Foundation — SEO Keyword Strategy |  |  | 
+Target market: Hapur, Gulaothi & Hasanpur (UP) blood bank / blood center services |  |  | 
+Keyword Type | Keyword | Search Intent | Recommended Placement
+Primary | Blood bank in Hapur | Local / Transactional | Homepage Title, H1, Blood Centres page Title & H1
+Primary | Blood center in Hapur | Local / Transactional | Homepage Title, Meta Description, Blood Centres page
+Secondary | Blood bank near me | Local / High Intent | Blood Centres page H1, Contact page, Google Business Profile
+Secondary | Charitable Blood Bank Hapur | Trust / Branded-local | About Us page Title, Meta Description, body content
+Secondary | Emergency Blood Services Hapur | Urgent / Transactional | Contact page Title, Blood Centres page, homepage CTA section
+Secondary | Blood Donation Camp Hapur | Informational / Community | Initiatives page Title, Meta Description, blog/news content
+
+=== SHEET: Title & Meta - Old vs New ===
+Title Tag & Meta Description Rewrite — Old vs New |  |  |  |  | 
+Note: 'Old' values are only shown where they were verifiable on-site. Where a page's current tag could not be fetched, it is marked N/A. |  |  |  |  | 
+Page / URL | Element | OLD (Current) | NEW (Recommended) | Char. Count (New) | Primary Keyword Used
+Homepage
+induscarefoundation.com/index.html | Title Tag | Indus Care Foundation | Healing Together & Lifesaving Blood Support | Blood Bank in Hapur | Blood Center in Hapur – Indus Care Foundation | 67 | Blood bank in Hapur / Blood center in Hapur
+ | Meta Description | Indus Care Foundation provides affordable healthcare, lifesaving blood support, medical camps, and community outreach across India. | Looking for a blood bank in Hapur? Indus Care Foundation is a charitable blood bank & blood center in Hapur offering 24/7 emergency blood services, donation camps & free health camps. | 183 | Blood bank in Hapur / Blood center in Hapur
+Blood Centres
+induscarefoundation.com/blood-centres.html | Title Tag | Not verifiable in current crawl (page not indexed) — assumed generic "Blood Centres - Indus Care Foundation" | Blood Bank Near Me | Blood Center in Hapur, Gulaothi & Hasanpur | 63 | Blood bank near me / Blood center in Hapur
+ | Meta Description | Not verifiable in current crawl (page not indexed) | Find a trusted blood bank near you in Hapur, Gulaothi & Hasanpur. Our charitable blood center offers whole blood, PRBC, platelets & emergency blood services, 24/7. | 163 | Blood bank near me / Blood center in Hapur
+About Us
+induscarefoundation.com/about.html | Title Tag | Not verifiable in current crawl (page not indexed) — assumed generic "About Us - Indus Care Foundation" | About Us | Charitable Blood Bank Hapur – Indus Care Foundation | 62 | Charitable Blood Bank Hapur
+ | Meta Description | Not verifiable in current crawl (page not indexed) | Indus Care Foundation is a charitable blood bank in Hapur, committed to emergency blood services, blood donation camps & healthcare outreach since 2020. | 152 | Charitable Blood Bank Hapur
+Initiatives
+induscarefoundation.com/initiatives.html | Title Tag | Not verifiable in current crawl (page not indexed) — assumed generic "Initiatives - Indus Care Foundation" | Blood Donation Camp in Hapur | Our Initiatives – Indus Care Foundation | 70 | Blood Donation Camp Hapur
+ | Meta Description | Not verifiable in current crawl (page not indexed) | Explore our blood donation camps in Hapur, free health check-up camps & medicine distribution drives supporting underserved communities across UP. | 146 | Blood Donation Camp Hapur
+Contact Us
+induscarefoundation.com/contact.html | Title Tag | Not verifiable in current crawl (page not indexed) — assumed generic "Contact Us - Indus Care Foundation" | Emergency Blood Services Hapur | Contact Us – Indus Care Foundation | 67 | Emergency Blood Services Hapur
+ | Meta Description | Not verifiable in current crawl (page not indexed) | Need emergency blood services in Hapur? Call our 24/7 helpline or visit our blood bank in Hapur, Gulaothi or Hasanpur. Register as a donor today. | 145 | Emergency Blood Services Hapur
+Gallery
+induscarefoundation.com/gallery.html | Title Tag | Not verifiable in current crawl (page not indexed) — assumed generic "Gallery - Indus Care Foundation" | Photo Gallery | Blood Donation Camps in Hapur – Indus Care Foundation | 69 | Blood Donation Camp Hapur
+ | Meta Description | Not verifiable in current crawl (page not indexed) | Browse photos from our blood donation camps, health check-up drives & community outreach programs across Hapur, Gulaothi & Hasanpur. | 132 | Blood Donation Camp Hapur
+
+=== SHEET: H1 & Content Recommendations ===
+H1 Tags & On-Page Content Recommendations |  |  | 
+Page | OLD H1 / Content Gap | NEW H1 (Recommended) | Additional Content to Add
+Homepage | "Working Towards a Healthier Tomorrow" — no target keyword present | Trusted Blood Bank in Hapur | Blood Center Serving Hapur, Gulaothi & Hasanpur | Add a short intro paragraph (100-150 words) below the hero using 'blood bank in Hapur' and 'blood center in Hapur' naturally 2-3 times. Add an FAQ block answering 'Where is the nearest blood bank near me in Hapur?' Add city/area names in body text, not just footer.
+Blood Centres page | No unique keyword-rich intro paragraph (not verifiable — likely just a list of centres) | Blood Bank Near Me — Our Blood Centers in Hapur, Gulaothi & Hasanpur | Add individual sub-sections per centre, each with its own H2 (e.g. 'Blood Bank in Hapur', 'Blood Center in Gulaothi', 'Blood Center in Hasanpur') with address, timings, phone number and Google Map embed for local SEO. Add schema markup (LocalBusiness / MedicalOrganization).
+About Us page | Generic mission statement, no local/charitable keyword emphasis | About Our Charitable Blood Bank in Hapur | Add a paragraph explaining charitable/non-profit status (80G & 12A) using 'Charitable Blood Bank Hapur' phrase, founding story, and service area (Hapur, Gulaothi, Hasanpur, wider Delhi NCR).
+Initiatives page | "Impact In Action" — generic, no location keyword | Blood Donation Camps in Hapur & Community Health Initiatives | Add a dedicated section titled 'Blood Donation Camp Hapur' listing past/upcoming camps with dates and locations. Add testimonials or photos from actual Hapur camps to build local relevance and freshness.
+Contact page | "Request Blood / Components" — no urgency/location keyword in heading | Emergency Blood Services in Hapur — Contact Us 24/7 | Add a prominent 'Emergency Blood Services Hapur' heading above the helpline number. Add full address with pin code for each centre (Hapur, Gulaothi, Hasanpur) for local pack ranking. Embed Google Map.
+
+=== SHEET: Action Plan ===
+SEO Action Plan — Priority Order |  |  | 
+# | Action | Priority | Notes
+1 | Update Title Tags & Meta Descriptions on all 6 pages (see 'Title & Meta - Old vs New' tab) | High | Do first — direct ranking + CTR impact
+2 | Submit sitemap.xml to Google Search Console; verify property | High | Site pages not currently appearing in Google index
+3 | Update H1 tags on Homepage, Blood Centres, About, Initiatives & Contact pages | High | See 'H1 & Content Recommendations' tab
+4 | Add city-specific content blocks (Hapur, Gulaothi, Hasanpur) with target keywords | High | Improves local relevance for 'near me' searches
+5 | Create/claim Google Business Profile for each blood centre (Hapur, Gulaothi, Hasanpur) | High | Essential for 'blood bank near me' local pack ranking
+6 | Add LocalBusiness/MedicalOrganization schema markup to Blood Centres & Contact pages | Medium | Helps Google understand location & services
+7 | Add og:image and og:url meta tags for social sharing previews | Medium | Currently missing — broken link previews on WhatsApp/Facebook
+8 | Fix placeholder footer links (#) — social icons, Terms, Transparency, CSR Support | Medium | Trust and crawlability issue
+9 | Update copyright year in footer (currently 2024) | Low | Minor trust/freshness signal
+10 | Add fallback static numbers for JS-animated impact counters | Medium | Currently show '0' if JS fails to load
