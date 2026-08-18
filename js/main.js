@@ -25,15 +25,21 @@ function initApp() {
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileBackdrop = document.getElementById('mobileBackdrop');
 
-  function openMobileMenu() {
+    function openMobileMenu() {
     if (mobileDrawer) mobileDrawer.classList.add('open');
-    if (mobileBackdrop) mobileBackdrop.classList.add('active');
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('hidden');
+      mobileBackdrop.classList.add('active');
+    }
     document.body.style.overflow = 'hidden';
   }
 
-  function closeMobileMenu() {
+    function closeMobileMenu() {
     if (mobileDrawer) mobileDrawer.classList.remove('open');
-    if (mobileBackdrop) mobileBackdrop.classList.remove('active');
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('active');
+      mobileBackdrop.classList.add('hidden');
+    }
     document.body.style.overflow = '';
   }
 

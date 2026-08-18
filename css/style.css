@@ -171,3 +171,35 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+
+/* Mobile Nav Drawer & Backdrop Z-Index Fix */
+#mobileBackdrop {
+  z-index: 9990 !important;
+}
+
+#mobileBackdrop.active {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#mobileDrawer {
+  z-index: 10000 !important;
+}
+
+.mobile-drawer {
+  display: none;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-drawer.open {
+  display: flex !important;
+  visibility: visible !important;
+  transform: translateX(0);
+}
