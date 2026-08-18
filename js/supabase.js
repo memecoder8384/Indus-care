@@ -1,7 +1,6 @@
-import { createClient } from '@supabase/supabase-js';
+let supabaseInstance = null;
 
 let rawUrl = (import.meta.env.VITE_SUPABASE_URL || '').trim();
-// Clean up URL if user included /rest/v1/ suffix or trailing slashes
 const supabaseUrl = rawUrl.replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
 const supabaseAnonKey = (import.meta.env.VITE_SUPABASE_ANON_KEY || '').trim();
 
@@ -14,7 +13,13 @@ export const isSupabaseConfigured = () => {
   );
 };
 
-export const supabase = createClient(
-  supabaseUrl || 'https://placeholder.supabase.co',
-  supabaseAnonKey || 'placeholder-key'
-);
+export async function getSupabase() {
+  if (!supabaseInstance) {
+    const { createClient } = await import('@supabase/supabase-js');
+    supabaseInstance = createClient(
+      supabaseUrl || 'https://placeholder.supabase.co',
+      supabaseAnonKey || 'placeholder-key'
+    );
+  }
+  return supabaseInstance;
+}

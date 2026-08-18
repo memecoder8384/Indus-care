@@ -62,11 +62,26 @@
   </script>
 
   <!-- Fonts & Icons -->
+  <!-- Non-blocking Google Fonts Loader -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
+  <script>
+    (function() {
+      var loadFont = function() {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&family=Material+Symbols+Outlined&display=swap';
+        document.head.appendChild(l);
+      };
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        loadFont();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadFont);
+      }
+    })();
+  </script>
+  <noscript>
+    </noscript>
   <link rel="stylesheet" href="/css/style.css" />
   <script type="module" src="/js/main.js"></script>
   <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high" type="image/webp">

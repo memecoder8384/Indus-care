@@ -1,0 +1,7 @@
+<link rel="canonical" href="https://induscarefoundation.com/index.html" />
+<script type="application/ld+json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high" type="image/webp">
+<script type="module" crossorigin src="/assets/main-DURflTTl.js">
+<link rel="stylesheet" crossorigin href="/assets/main-BaQ871K9.css">

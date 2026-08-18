@@ -1,7 +1,7 @@
 /**
  * Form validation and dual Supabase + Google Sheets submission handler
  */
-import { supabase, isSupabaseConfigured } from './supabase.js';
+import { getSupabase, isSupabaseConfigured } from './supabase.js';
 
 const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxyJPFhd66Tb7YMmgwNB0j8lHfIiqoJ61fHyhqfVIoCfbrQXNN_kGnHvUiCfaCV387N/exec';
 
@@ -83,6 +83,7 @@ export function initFormValidation() {
           : userNotes;
 
         // 1. Insert into Supabase contact_queries table first
+        const supabase = await getSupabase();
         const supabasePayload = {
           status: 'pending'
         };
