@@ -255,7 +255,7 @@
   <nav class="fixed w-full top-0 z-40 transition-all duration-300 ease-in-out nav-solid" id="topNav">
     <div class="flex justify-between items-center px-4 sm:px-6 md:px-margin-desktop py-3.5 sm:py-4 max-w-container-max mx-auto">
       <a href="index.html" class="flex items-center gap-3 group">
-        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 44px; max-height: 48px; width: auto;" class="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm" />
+        <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 44px; max-height: 48px; width: auto;" class="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform drop-shadow-sm"  loading="eager" fetchpriority="high" decoding="async" />
       </a>
 
       <div class="hidden md:flex gap-6 md:gap-8 items-center font-body-md text-body-md font-semibold">
@@ -290,7 +290,7 @@
     <div>
       <div class="flex justify-between items-center pb-5 border-b border-gray-100">
         <div class="flex items-center gap-2">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 36px; max-height: 40px; width: auto;" class="h-9 w-auto" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 36px; max-height: 40px; width: auto;" class="h-9 w-auto"  loading="eager" fetchpriority="high" decoding="async" />
         </div>
         <button id="closeMobileMenuBtn" class="text-gray-500 hover:text-gray-900 p-1">
           <span class="material-symbols-outlined text-2xl">close</span>
@@ -351,7 +351,7 @@
         <div class="relative max-w-3xl mx-auto bg-gray-900 rounded-2xl overflow-hidden shadow-xl group" id="hapurCarousel">
           <!-- Slide Container -->
           <div class="relative min-h-[320px] sm:min-h-[450px] md:min-h-[550px] flex items-center justify-center p-2 sm:p-4">
-            <img id="hapurSlideImg" src="/licence/hapur_licence_1.jpg" alt="Hapur Branch License Page 1" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'Hapur Charitable Blood Center License')" />
+            <img id="hapurSlideImg" src="/licence/hapur_licence_1.jpg" alt="Hapur Branch License Page 1" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'Hapur Charitable Blood Center License')"  loading="lazy" decoding="async" />
             
             <!-- Page Badge -->
             <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow">
@@ -402,7 +402,7 @@
         <!-- Single Document Display for Vardan -->
         <div class="relative max-w-3xl mx-auto bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
           <div class="relative min-h-[320px] sm:min-h-[450px] md:min-h-[550px] flex items-center justify-center p-2 sm:p-4">
-            <img src="/licence/vardan_licence_1.jpg" alt="VARDAN Charitable Blood Centre License Certificate" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'VARDAN Charitable Blood Centre License')" />
+            <img src="/licence/vardan_licence_1.jpg" alt="VARDAN Charitable Blood Centre License Certificate" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'VARDAN Charitable Blood Centre License')"  loading="lazy" decoding="async" />
             
             <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow">
               <span>Licence Certificate</span>
@@ -442,7 +442,7 @@
         <div class="relative max-w-3xl mx-auto bg-gray-900 rounded-2xl overflow-hidden shadow-xl group" id="indusCarousel">
           <!-- Slide Container -->
           <div class="relative min-h-[320px] sm:min-h-[450px] md:min-h-[550px] flex items-center justify-center p-2 sm:p-4">
-            <img id="indusSlideImg" src="/licence/indus_licence_1.jpg" alt="Indus Branch License Page 1" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'Indus Charitable Blood Centre License')" />
+            <img id="indusSlideImg" src="/licence/indus_licence_1.jpg" alt="Indus Branch License Page 1" class="max-h-[350px] sm:max-h-[520px] w-auto object-contain cursor-pointer transition-transform hover:scale-[1.01]" onclick="openLicenceModal(this.src, 'Indus Charitable Blood Centre License')"  loading="lazy" decoding="async" />
             
             <!-- Page Badge -->
             <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow">
@@ -488,7 +488,7 @@
         </button>
       </div>
       <div class="p-2 sm:p-4 flex-1 overflow-auto bg-gray-900 flex items-center justify-center">
-        <img id="licenceModalImg" src="" alt="Licence Document Full View" class="max-w-full max-h-[70vh] sm:max-h-[75vh] object-contain rounded-lg shadow-md" />
+        <img id="licenceModalImg" src="" alt="Licence Document Full View" class="max-w-full max-h-[70vh] sm:max-h-[75vh] object-contain rounded-lg shadow-md"  loading="lazy" decoding="async" />
       </div>
       <div class="px-4 sm:px-6 py-2.5 sm:py-3 bg-surface border-t border-gray-200 flex justify-between items-center text-xs sm:text-sm text-gray-600">
         <span class="hidden sm:inline">Click anywhere outside or press Close to dismiss</span>
@@ -505,7 +505,7 @@
     <div class="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-gutter">
       <div class="space-y-4 sm:space-y-6">
         <div class="flex items-center gap-3">
-          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 56px; width: auto;" class="h-12 sm:h-14 w-auto bg-white p-2 rounded-xl shadow-md" />
+          <img src="/images/logo.svg" alt="Indus Care Foundation Logo" style="height: 48px; max-height: 56px; width: auto;" class="h-12 sm:h-14 w-auto bg-white p-2 rounded-xl shadow-md"  loading="eager" fetchpriority="high" decoding="async" />
         </div>
         <p class="text-gray-400 text-xs sm:text-body-sm leading-relaxed">
           Dedicated to providing healthcare support and bridging the medical resource gap for India's underserved populations since 2020.
